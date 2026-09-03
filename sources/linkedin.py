@@ -94,7 +94,9 @@ def fetch(cfg: dict) -> list[RawOffer]:
     pages = sc.get("pages", 3)
     delay = sc.get("delay_seconds", 3)
 
-    queries = [q for cat in cfg["search_queries"].values() for q in cat]
+    # LinkedIn est lent (délai anti-throttle) : on peut lui donner une liste
+    # de requêtes réduite via `sources.linkedin.queries`. Sinon, toutes.
+    queries = sc.get("queries") or [q for cat in cfg["search_queries"].values() for q in cat]
     out: list[RawOffer] = []
     seen: set[str] = set()
     fails = 0

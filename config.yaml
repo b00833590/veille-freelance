@@ -102,11 +102,28 @@ sources:
   linkedin:
     enabled: true
     location: "France"
-    time_filter: "r604800"     # r86400 = 24h, r604800 = 7j
-    pages: 3                    # 25 offres / page
-    delay_seconds: 3
+    time_filter: "r259200"     # 3 jours (r86400=24h, r604800=7j) — marge pour 4 scans/j
+    pages: 2                    # 25 offres / page
+    delay_seconds: 2.5
     enrich_limit: 25           # nb de descriptions récupérées / scan (throttle LinkedIn)
     enrich_delay: 2.5
+    # Liste réduite (LinkedIn est lent) : les variantes proches sont redondantes.
+    queries:
+      - "founder associate"
+      - "chief of staff"
+      - "bras droit fondateur"
+      - "AI operations"
+      - "AI project manager"
+      - "chef de projet IA"
+      - "startup generalist"
+      - "sales development representative"
+      - "business developer"
+      - "growth"
+      - "sales operations"
+      - "consultant IA"
+      - "formateur IA"
+      - "AI enablement"
+      - "AI adoption"
   email_inbox:
     enabled: true
     imap_host: "imap.gmail.com"
