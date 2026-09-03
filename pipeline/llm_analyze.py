@@ -60,7 +60,11 @@ def _call_model(client, model: str, prompt: str) -> str:
     resp = client.models.generate_content(
         model=model,
         contents=prompt,
-        config={"response_mime_type": "application/json", "temperature": 0.2},
+        config={
+            "response_mime_type": "application/json",
+            "temperature": 0.2,
+            "automatic_function_calling": {"disable": True},
+        },
     )
     return resp.text
 
