@@ -49,7 +49,7 @@ def patched(monkeypatch):
     def factory(outputs):
         client = _FakeClient(outputs)
         holder["client"] = client
-        fake_genai = type("g", (), {"Client": staticmethod(lambda api_key: client)})
+        fake_genai = type("g", (), {"Client": staticmethod(lambda **kw: client)})
         monkeypatch.setattr(llm_analyze, "genai", fake_genai, raising=False)
         import sys
         mod = type(sys)("google")

@@ -11,11 +11,24 @@ from pydantic import BaseModel, Field, ValidationError
 log = logging.getLogger("veille.llm")
 
 _PROMPT = Path(__file__).parents[1] / "prompts" / "analyze_offer.md"
-# flash-lite d'abord : quota free tier plus large (15 RPM / 1000 RPD) que flash.
-_MODELS = ("gemini-2.5-flash-lite", "gemini-2.5-flash")
+# Modèles par défaut (surchargés par config.yaml > thresholds.llm.models).
+_MODELS = ("gemini-3.5-flash", "gemini-flash-lite-latest")
 _DESC_LIMIT = 4000
-_MIN_INTERVAL = 4.5   # secondes entre 2 appels (reste sous les limites free tier)
+_MIN_INTERVAL = 2.5     # secondes entre 2 appels (marge sous les limites free tier)
+_HTTP_TIMEOUT_MS = 25000
 _last_call = [0.0]
+
+# Disjoncteur : au 1er signe de quota épuisé, on coupe le LLM pour tout le run.
+_circuit_open = [False]
+_dead_models: set[str] = set()   # modèles 404 pour ce run -> on ne les rappelle pas
+_QUOTA_MARKERS = ("resource_exhausted", "429", "rate_limit", "quota exceeded",
+                  "quota_exceeded", "exceeded your current quota")
+
+
+def reset_circuit() -> None:
+    _circuit_open[0] = False
+    _last_call[0] = 0.0
+    _dead_models.clear()
 
 
 def _throttle() -> None:
@@ -23,6 +36,11 @@ def _throttle() -> None:
     if wait > 0:
         time.sleep(wait)
     _last_call[0] = time.monotonic()
+
+
+def _is_quota_error(exc: Exception) -> bool:
+    msg = f"{type(exc).__name__} {exc}".lower()
+    return any(m in msg for m in _QUOTA_MARKERS)
 
 
 class LLMAnalysis(BaseModel):
@@ -40,6 +58,8 @@ class LLMAnalysis(BaseModel):
 
 
 def should_analyze(offer: dict, cfg: dict) -> bool:
+    if _circuit_open[0]:
+        return False
     if offer.get("excluded") or offer.get("llm_analysis") is not None:
         return False
     return offer.get("pre_score", 0) >= cfg["thresholds"]["llm"]["min_prescore"]
@@ -60,7 +80,7 @@ def _build_prompt(offer: dict) -> str:
 
 
 def _parse(raw: str) -> LLMAnalysis:
-    raw = raw.strip()
+    raw = (raw or "").strip()
     if raw.startswith("```"):
         raw = raw.strip("`")
         raw = raw[raw.find("{"):raw.rfind("}") + 1]
@@ -74,6 +94,7 @@ def _call_model(client, model: str, prompt: str) -> str:
         contents=prompt,
         config={
             "response_mime_type": "application/json",
+            "response_schema": LLMAnalysis,   # force un JSON conforme au schéma
             "temperature": 0.2,
             "automatic_function_calling": {"disable": True},
         },
@@ -81,8 +102,8 @@ def _call_model(client, model: str, prompt: str) -> str:
     return resp.text
 
 
-def analyze(offer: dict, api_key: str | None) -> dict | None:
-    if not api_key:
+def analyze(offer: dict, api_key: str | None, models: tuple[str, ...] | None = None) -> dict | None:
+    if not api_key or _circuit_open[0]:
         return None
     try:
         from google import genai
@@ -90,18 +111,38 @@ def analyze(offer: dict, api_key: str | None) -> dict | None:
         log.warning("google-genai absent : analyse LLM désactivée")
         return None
 
-    client = genai.Client(api_key=api_key)
+    client = genai.Client(
+        api_key=api_key,
+        http_options={"timeout": _HTTP_TIMEOUT_MS},
+    )
     prompt = _build_prompt(offer)
 
-    for model in _MODELS:
-        for attempt in (1, 2):
+    for model in (models or _MODELS):
+        if model in _dead_models:
+            continue
+        for attempt in (1, 2):   # 2e essai = transitoire (500/503)
             try:
                 raw = _call_model(client, model, prompt)
                 return _parse(raw).model_dump()
             except (ValidationError, json.JSONDecodeError) as e:
-                log.warning("LLM %s: réponse invalide (essai %d): %s", model, attempt, e)
-            except Exception as e:  # réseau, quota, etc.
-                log.warning("LLM %s: échec (essai %d): %s", model, attempt, type(e).__name__)
-                break  # on passe au modèle suivant
-    log.error("Analyse LLM impossible pour '%s' — fallback déterministe", offer.get("title"))
+                log.warning("LLM %s: JSON invalide (essai %d): %s", model, attempt, e)
+                continue
+            except Exception as e:  # réseau, quota, timeout, modèle inconnu…
+                emsg = str(e).lower()
+                if _is_quota_error(e):
+                    log.warning("LLM: quota atteint — LLM coupé pour ce run, "
+                                "fallback déterministe pour le reste")
+                    _circuit_open[0] = True
+                    return None
+                if "not_found" in emsg or "404" in emsg or "no longer available" in emsg:
+                    log.warning("LLM: modèle %s indisponible (à mettre à jour dans config.yaml)", model)
+                    _dead_models.add(model)
+                    break
+                if attempt == 1 and ("server" in emsg or "503" in emsg or "500" in emsg
+                                     or "unavailable" in emsg or "timeout" in emsg):
+                    time.sleep(3)
+                    continue
+                log.warning("LLM %s: échec (%s)", model, type(e).__name__)
+                break
+    log.info("Analyse LLM indisponible pour « %s » — score déterministe", offer.get("title"))
     return None

@@ -148,7 +148,11 @@ thresholds:
   llm:
     min_prescore: 38   # bas : beaucoup d'offres LinkedIn n'ont pas de description
                        # (IP CI bloquée) -> on laisse le LLM juger sur le titre. Gemini free tier.
-    max_per_run: 60    # plafond d'appels LLM par scan (les meilleurs pré-scores d'abord)
+    max_per_run: 40    # plafond d'appels LLM par scan (les meilleurs pré-scores d'abord)
+                       # disjoncteur : au 1er 429, le LLM est coupé pour le reste du run
+    models:            # essayés dans l'ordre ; si périmés, mettre à jour ici
+      - "gemini-3.5-flash"        # fiable
+      - "gemini-flash-lite-latest"  # secours (plus rapide mais parfois instable)
 
 # -----------------------------------------------------------------------------
 #  Filtres déterministes.

@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, timezone
 from pipeline import preferences, score
 from pipeline.dedup import canonical_url, fingerprint, find_duplicate, merge_sources, normalize_company
 from pipeline.filter_rules import classify
-from pipeline.llm_analyze import analyze, should_analyze
+from pipeline.llm_analyze import analyze, reset_circuit, should_analyze
 from settings import env
 from sources import SOURCES
 from store import db
@@ -97,7 +97,8 @@ def _score_offer(conn, cfg, offer: dict, weights: dict, penalties: dict,
     llm = offer.get("llm_analysis")
     budget_ok = llm_budget is None or llm_budget[0] > 0
     if allow_llm and budget_ok and not fields["excluded"] and should_analyze(offer, cfg):
-        result = analyze(offer, api_key)
+        models = cfg["thresholds"]["llm"].get("models")
+        result = analyze(offer, api_key, tuple(models) if models else None)
         if result is not None:
             llm = result
             used_llm = True
@@ -137,6 +138,7 @@ def _archive_old(conn, cfg) -> int:
 
 def scan(conn, cfg: dict, *, source_names=None) -> dict:
     started = now_iso()
+    reset_circuit()
     cfg = _with_greylist(conn, cfg)
     raw, ok, failed = _collect(cfg, source_names)
 
