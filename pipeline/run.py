@@ -1,6 +1,7 @@
 """Orchestrateur : collecte -> dédup -> filtres -> score -> LLM -> archivage."""
 from __future__ import annotations
 
+import json
 import logging
 from datetime import datetime, timedelta, timezone
 
@@ -17,6 +18,15 @@ log = logging.getLogger("veille.run")
 
 _RESCORE_STATUSES = ("new", "seen", "interesting")
 _ACTIVE_STATUSES = ("new", "seen", "interesting", "applied", "obtained")
+
+
+def _with_greylist(conn, cfg: dict) -> dict:
+    grey = json.loads(db.get_state(conn, "greylist", "[]"))
+    if not grey:
+        return cfg
+    hp = dict(cfg.get("hard_preferences") or {})
+    hp["exclude_companies"] = list(hp.get("exclude_companies", [])) + grey
+    return {**cfg, "hard_preferences": hp}
 
 
 def _to_offer(raw: dict) -> dict:
@@ -123,6 +133,7 @@ def _archive_old(conn, cfg) -> int:
 
 def scan(conn, cfg: dict, *, source_names=None) -> dict:
     started = now_iso()
+    cfg = _with_greylist(conn, cfg)
     raw, ok, failed = _collect(cfg, source_names)
 
     new_ids: list[str] = []
@@ -174,6 +185,7 @@ def scan(conn, cfg: dict, *, source_names=None) -> dict:
 
 def recompute(conn, cfg: dict) -> dict:
     """Re-score toutes les offres actives sans re-collecter (ex: après changement de config)."""
+    cfg = _with_greylist(conn, cfg)
     weights = preferences.current_weights(conn, cfg)
     penalties = preferences.feedback_penalties(conn, cfg)
     rows = conn.execute(
