@@ -56,4 +56,3 @@ jobs:
           ISSUE: ${{ github.event.issue.number }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-# workflow enregistré

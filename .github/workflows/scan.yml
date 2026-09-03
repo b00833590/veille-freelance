@@ -44,4 +44,3 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: scan $(date -u +%FT%TZ) [skip ci]"
           git push
 
-# workflow enregistré via ce commit
