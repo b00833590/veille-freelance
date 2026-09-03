@@ -33,6 +33,8 @@ def _clean(s: str) -> str:
 
 
 def normalize_company(name: str) -> str:
+    # "S.A.R.L." -> "SARL" avant nettoyage, pour attraper les formes pointées.
+    name = re.sub(r"\.", "", name or "")
     tokens = [t for t in _clean(name).split() if t not in _LEGAL_SUFFIXES]
     return " ".join(tokens).strip()
 
@@ -68,13 +70,13 @@ def fingerprint(company: str, title: str, city: str) -> str:
     key = "|".join((
         normalize_company(company),
         normalize_title(title),
-        _clean(city).split(",")[0].strip(),
+        _clean((city or "").split(",")[0]),
     ))
     return "fp_" + hashlib.sha1(key.encode("utf-8")).hexdigest()[:20]
 
 
 def _cities_compatible(a: str, b: str) -> bool:
-    a, b = _clean(a).split(",")[0].strip(), _clean(b).split(",")[0].strip()
+    a, b = _clean((a or "").split(",")[0]), _clean((b or "").split(",")[0])
     if not a or not b:
         return True
     return a == b or a in b or b in a
