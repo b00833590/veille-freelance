@@ -1,0 +1,45 @@
+name: scan
+
+on:
+  schedule:
+    - cron: "0 5,10,16,19 * * *"   # ~07h, 12h, 18h, 21h Europe/Paris
+  workflow_dispatch:
+
+concurrency:
+  group: veille-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Scan des sources
+        run: python main.py scan
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+
+      - name: Commit base + dashboard
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/veille.db docs/
+          git diff --cached --quiet || git commit -m "chore: scan $(date -u +%FT%TZ) [skip ci]"
+          git push

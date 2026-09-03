@@ -1,0 +1,57 @@
+name: feedback
+
+on:
+  issues:
+    types: [opened]
+
+concurrency:
+  group: veille-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  ingest:
+    if: contains(github.event.issue.labels.*.name, 'feedback')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Traiter le feedback
+        # Les valeurs viennent d'env vars (jamais interpolées dans le shell) -> pas d'injection.
+        run: python main.py ingest-feedback --issue "$ISSUE" --title "$TITLE" --body "$BODY" --author "$AUTHOR" | tee result.txt
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+          TITLE: ${{ github.event.issue.title }}
+          BODY: ${{ github.event.issue.body }}
+          AUTHOR: ${{ github.event.issue.user.login }}
+
+      - name: Rebuild dashboard
+        run: python main.py report
+
+      - name: Commit
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/veille.db docs/
+          git diff --cached --quiet || git commit -m "chore: feedback #$ISSUE [skip ci]"
+          git push
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+
+      - name: Répondre et fermer l'issue
+        run: |
+          gh issue comment "$ISSUE" --body-file result.txt
+          gh issue close "$ISSUE"
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
