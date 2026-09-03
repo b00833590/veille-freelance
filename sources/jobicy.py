@@ -9,8 +9,8 @@ from sources.base import RawOffer, http_get
 log = logging.getLogger("veille.sources.jobicy")
 _API = "https://jobicy.com/api/v2/remote-jobs"
 
-# Industries Jobicy pertinentes pour les 3 catégories.
-_INDUSTRIES = ["business", "marketing", "sales", "management", "admin", "consulting"]
+# Industries Jobicy valides et pertinentes pour les 3 catégories.
+_INDUSTRIES = ["business", "marketing", "management", "admin", "supporting", "hr"]
 
 
 def _strip_html(s: str) -> str:

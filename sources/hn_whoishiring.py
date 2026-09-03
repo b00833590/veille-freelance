@@ -21,11 +21,11 @@ def _strip_html(s: str) -> str:
 
 
 def _keywords(cfg: dict) -> list[str]:
-    kw = {"remote", "part-time", "part time", "intern", "internship", "founding",
-          "chief of staff", "operations", "sales", "growth", "sdr", "bdr",
-          "business development", "gtm", "founder associate"}
+    # Uniquement les intitulés cibles précis : HN est trop volumineux pour du large.
+    kw = {"chief of staff", "founder associate", "founding gtm", "founding bdr",
+          "founder's associate", "generalist"}
     for cat in cfg["search_queries"].values():
-        kw.update(q.lower() for q in cat)
+        kw.update(q.lower() for q in cat if len(q) > 4)
     return sorted(kw)
 
 
@@ -61,19 +61,29 @@ def fetch(cfg: dict) -> list[RawOffer]:
         low = text.lower()
         if not any(k in low for k in kws):
             continue
-        # 1re "phrase" = ligne de titre habituelle "Company | Role | Location | ..."
-        head = re.split(r"[.\n]| - ", text, maxsplit=1)[0][:180]
+        # Le format canonique HN est "Company | Role | Location | (REMOTE) | ...".
+        head = text.split("\n", 1)[0][:220]
         parts = [p.strip() for p in head.split("|")]
-        company = parts[0][:80] if parts else "HN"
-        title = parts[1][:120] if len(parts) > 1 else head
+        if len(parts) < 2:
+            continue  # pas au format -> trop peu fiable à parser
+        company = re.sub(r"https?://\S+", "", parts[0]).strip()[:80] or "HN"
+        title = parts[1][:120]
+        if not title or title.lower().startswith("http") or company.lower() == title.lower():
+            continue
+        # parts[1] doit ressembler à un intitulé de poste, pas à un lieu / une techno.
+        if not re.search(r"(founder|associate|chief|operations|ops|sdr|bdr|sales|growth|"
+                         r"business develop|gtm|generalist|consultant|manager|coordinator|"
+                         r"trainer|analyst|revops)", title, re.I):
+            continue
+        location = " | ".join(parts[2:4])[:120]
         m = _URL_RX.search(text)
-        url = m.group(0) if m else f"https://news.ycombinator.com/item?id={child.get('id')}"
+        url = m.group(0).rstrip(".,)") if m else f"https://news.ycombinator.com/item?id={child.get('id')}"
         out.append(RawOffer(
-            title=title or "Poste (HN Who is hiring)",
+            title=title,
             company=company,
             description=text[:3000],
             url=url,
-            location=head,
+            location=location,
             published_at=child.get("created_at"),
             source="hn_whoishiring",
             external_id=str(child.get("id", "")),

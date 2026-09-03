@@ -79,7 +79,8 @@ sources:
   themuse:
     enabled: true
     categories: ["Business Operations", "Sales", "Project Management", "Marketing"]
-    locations: ["Paris, France", "Flexible / Remote"]
+    # The Muse est très US : on restreint aux localisations pertinentes.
+    locations: ["Paris, France", "London, United Kingdom"]
     pages: 2
   remotive:
     enabled: true
@@ -104,6 +105,8 @@ sources:
     time_filter: "r604800"     # r86400 = 24h, r604800 = 7j
     pages: 3                    # 25 offres / page
     delay_seconds: 3
+    enrich_limit: 25           # nb de descriptions récupérées / scan (throttle LinkedIn)
+    enrich_delay: 2.5
   email_inbox:
     enabled: true
     imap_host: "imap.gmail.com"

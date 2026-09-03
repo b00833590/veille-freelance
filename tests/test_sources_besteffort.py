@@ -46,11 +46,23 @@ def test_linkedin_parses_cards(cfg, monkeypatch):
     monkeypatch.setattr(linkedin.time, "sleep", lambda *_: None)
     offers = linkedin.fetch(_cfg(cfg, "linkedin",
                                  {"enabled": True, "location": "France", "pages": 1,
-                                  "time_filter": "r604800", "delay_seconds": 0}))
+                                  "time_filter": "r604800", "delay_seconds": 0, "enrich_limit": 0}))
     assert {o.title for o in offers} == {"Founder Associate", "Sales Development Representative"}
     fa = next(o for o in offers if o.title == "Founder Associate")
     assert fa.company == "Acme" and fa.external_id == "3920011"
     assert fa.published_at == "2026-08-30"
+
+
+def test_linkedin_enrichment_fills_description(cfg, monkeypatch):
+    seq = [FakeResp(LINKEDIN_HTML)] + [FakeResp("")] * 50
+    monkeypatch.setattr(linkedin, "http_get", lambda *a, **k: seq.pop(0))
+    monkeypatch.setattr(linkedin.time, "sleep", lambda *_: None)
+    detail = '<div class="show-more-less-html__markup">Prospection, cold calling, CRM, IA pour la personnalisation.</div>'
+    monkeypatch.setattr(linkedin.httpx, "get", lambda *a, **k: FakeResp(detail))
+    offers = linkedin.fetch(_cfg(cfg, "linkedin",
+                                 {"enabled": True, "pages": 1, "delay_seconds": 0,
+                                  "enrich_limit": 5, "enrich_delay": 0}))
+    assert any("cold calling" in (o.description or "") for o in offers)
 
 
 def test_linkedin_blocked_returns_partial(cfg, monkeypatch):

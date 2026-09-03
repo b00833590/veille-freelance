@@ -6,14 +6,17 @@ sécurité est l'ingestion des alertes email LinkedIn (sources/email_inbox.py).
 from __future__ import annotations
 
 import logging
+import random
 import time
 
+import httpx
 from selectolax.parser import HTMLParser
 
-from sources.base import RawOffer, http_get
+from sources.base import _UAS, RawOffer, http_get
 
 log = logging.getLogger("veille.sources.linkedin")
 _URL = "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
+_DETAIL = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/"
 _HEADERS = {
     "Accept": "text/html,application/xhtml+xml",
     "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
@@ -53,6 +56,35 @@ def _parse(html: str) -> list[RawOffer]:
     return out
 
 
+def _enrich_description(offer: RawOffer) -> bool:
+    """Récupère la description depuis la page détail (le card n'en a pas).
+
+    Renvoie False sur throttle (429/999) pour que l'appelant arrête l'enrichissement.
+    """
+    if not offer.external_id:
+        return True
+    try:
+        r = httpx.get(_DETAIL + offer.external_id,
+                      headers={**_HEADERS, "User-Agent": random.choice(_UAS)},
+                      timeout=15.0, follow_redirects=True)
+        if r.status_code in (429, 999):
+            return False
+        if r.status_code != 200:
+            return True
+        node = HTMLParser(r.text)
+        el = (node.css_first("div.show-more-less-html__markup")
+              or node.css_first("div.description__text"))
+        if el:
+            offer.description = el.text(separator=" ", strip=True)[:6000]
+        crit = node.css_first("span.description__job-criteria-text")
+        if crit:
+            offer.extra["seniority"] = crit.text(strip=True)
+        return True
+    except Exception as e:  # noqa: BLE001
+        log.debug("linkedin enrich %s: %s", offer.external_id, type(e).__name__)
+        return True
+
+
 def fetch(cfg: dict) -> list[RawOffer]:
     sc = cfg["sources"]["linkedin"]
     if not sc.get("enabled", True):
@@ -66,11 +98,15 @@ def fetch(cfg: dict) -> list[RawOffer]:
     out: list[RawOffer] = []
     seen: set[str] = set()
     fails = 0
+    stop = False
     for q in queries:
+        if stop:
+            break
         for page in range(pages):
             if fails >= 2:
-                log.warning("linkedin: 2 échecs consécutifs, arrêt (fallback = alertes email)")
-                return out
+                log.warning("linkedin: 2 échecs consécutifs, arrêt de la collecte (fallback = alertes email)")
+                stop = True
+                break
             params = {"keywords": q, "location": location, "f_TPR": tpr,
                       "start": page * 25}
             try:
@@ -92,5 +128,15 @@ def fetch(cfg: dict) -> list[RawOffer]:
                     seen.add(key)
                     out.append(c)
             time.sleep(delay)
-    log.info("linkedin: %d offres", len(out))
+
+    # Enrichissement : la description n'est pas dans les cards.
+    limit = sc.get("enrich_limit", 25)
+    enriched = 0
+    for c in out[:limit]:
+        if not _enrich_description(c):
+            log.warning("linkedin: throttle sur l'enrichissement, arrêt à %d", enriched)
+            break
+        enriched += 1
+        time.sleep(sc.get("enrich_delay", 2.5))
+    log.info("linkedin: %d offres (%d enrichies)", len(out), enriched)
     return out

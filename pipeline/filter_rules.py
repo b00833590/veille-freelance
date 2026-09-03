@@ -72,28 +72,71 @@ def _detect_remote(text: str, cfg: dict) -> str:
     return "unknown"
 
 
+_EUROPE_RX = re.compile(
+    r"\b(france|paris|île-de-france|ile-de-france|lyon|marseille|bordeaux|lille|nantes|"
+    r"toulouse|europe|european|emea|belgi|luxembourg|suisse|switzerland|"
+    r"germany|allemagne|spain|espagne|netherlands|amsterdam|berlin|madrid|barcelona|dublin|"
+    r"portugal|lisbon|italy|italie|united kingdom|london|londres)\b", re.I)
+_NON_EUROPE_RX = re.compile(
+    r"\b(united states|u\.?s\.?a?\.?|new york|san francisco|california|texas|washington|"
+    r"boston|chicago|seattle|austin|denver|atlanta|mclean|louisville|larkhall|"
+    r"canada|toronto|vancouver|india|bangalore|bengaluru|mumbai|delhi|"
+    r"singapore|australia|sydney|melbourne|brazil|brasil|são paulo|latam|mexico|"
+    r"apac|africa|nigeria|kenya|ethiopia|riyadh|saudi|uae|dubai|abu dhabi|qatar|"
+    r"philippines|manila|japan|tokyo|china|shanghai|hong kong|korea|dublin, oh)\b", re.I)
+
+
+def geo_relevant(offer: dict, remote: str) -> bool:
+    """L'offre est-elle atteignable depuis Paris ? (remote non hors-EU, ou lieu FR/EU)."""
+    loc = str(offer.get("location", "") or "").strip()
+    if not loc:
+        return True  # pas d'info -> ne pas pénaliser durement
+    if _EUROPE_RX.search(loc):
+        return True
+    if remote in ("remote", "hybrid"):
+        # remote : ok sauf si explicitement rattaché à une zone hors Europe
+        return _NON_EUROPE_RX.search(loc) is None
+    # on-site : il faut un signal Europe explicite
+    return _NON_EUROPE_RX.search(loc) is None and not _looks_like_place(loc)
+
+
+def _looks_like_place(loc: str) -> bool:
+    """Heuristique : 'Ville, Pays' hors Europe non listée -> considéré comme un lieu réel hors EU."""
+    return bool(re.search(r",\s*[A-Za-z]", loc)) and not _EUROPE_RX.search(loc)
+
+
 _HOURS_RX = re.compile(r"(\d{1,2})\s?h(?:eures|rs|)\b(?:\s?/?\s?(?:semaine|sem|week))?", re.I)
 _INTERN_RX = re.compile(r"\b(stage|stagiaire|internship|intern|alternance|alternant|apprenti\w*|work[- ]study)\b", re.I)
-_FREELANCE_RX = re.compile(r"\b(freelance|free-lance|ind[ée]pendant|mission|prestation|auto[- ]?entrepreneur|contractor)\b", re.I)
+_FREELANCE_RX = re.compile(r"\b(freelance|free-lance|ind[ée]pendant\.?e?|prestation de service|auto[- ]?entrepreneur|contractor role|missions? ponctuelles?|en freelance)\b", re.I)
+# Séniorité détectée SUR LE TITRE : disqualifie un poste étudiant/junior.
+_SENIOR_TITLE_RX = re.compile(
+    r"\b(senior|sr\.?|lead|principal|staff|head of|vp|vice[- ]president|"
+    r"director|directeur|directrice|chief (?!of staff)|expérimenté|confirmé|"
+    r"team lead|group manager|senior manager|account executive)\b", re.I)
+_SENIOR_DESC_RX = re.compile(r"\b(10\+? years|8\+? years|minimum (?:de )?[5-9] (?:ans|years))\b", re.I)
 _PARTTIME_RX = re.compile(r"\b(part[- ]time|temps partiel|mi[- ]temps|quelques heures|few hours per week)\b", re.I)
 _FULLTIME_RX = re.compile(r"\b(full[- ]time|temps plein|35\s?h|37\s?h|39\s?h)\b", re.I)
 
 
-def _detect_work_time(text: str) -> tuple[str, int | None]:
+def _detect_work_time(text: str, title: str = "") -> tuple[str, int | None]:
     hours = None
     m = _HOURS_RX.search(text)
     if m:
         h = int(m.group(1))
         if 3 <= h <= 45:
             hours = h
-    if _INTERN_RX.search(text):
+    # "stage/intern/alternance" : signal fiable seulement dans le TITRE
+    # (les descriptions d'entreprise mentionnent souvent leurs programmes de stage).
+    if _INTERN_RX.search(title):
         return "internship", hours
-    if _FREELANCE_RX.search(text):
+    if _FREELANCE_RX.search(title) or _FREELANCE_RX.search(text):
         return "freelance", hours
     if _PARTTIME_RX.search(text) or (hours is not None and hours <= 30):
         return "parttime", hours
     if _FULLTIME_RX.search(text) or (hours is not None and hours >= 35):
         return "fulltime", hours
+    if _INTERN_RX.search(text) and re.search(r"\b(6|4|3|five|four|six)[- ]month", text, re.I):
+        return "internship", hours
     return "unknown", hours
 
 
@@ -130,10 +173,14 @@ def classify(offer: dict, cfg: dict) -> dict:
         if _any(patterns, text):
             penalty_flags.append(flag)
 
+    title = str(offer.get("title", "") or "")
+    if _SENIOR_TITLE_RX.search(title) or _SENIOR_DESC_RX.search(str(offer.get("description", "") or "")):
+        penalty_flags.append("too_senior")
+
     given_wt = offer.get("work_time") if offer.get("work_time") not in (None, "", "unknown") else None
     given_ct = offer.get("contract_type") or None
 
-    wt, hours = _detect_work_time(text)
+    wt, hours = _detect_work_time(text, str(offer.get("title", "") or ""))
     if given_wt:
         wt = given_wt
     if offer.get("work_time_hours"):
@@ -142,12 +189,15 @@ def classify(offer: dict, cfg: dict) -> dict:
     remote = offer.get("remote") if offer.get("remote") not in (None, "", "unknown") \
         else _detect_remote(text, cfg)
 
+    geo_ok = geo_relevant({**offer, "location": offer.get("location", "")}, remote)
+
     return {
         "category": category,
         "excluded": excluded,
         "exclude_reason": reason,
         "status": "excluded" if excluded else offer.get("status", "new"),
         "remote": remote,
+        "geo_ok": geo_ok,
         "work_time": wt,
         "work_time_hours": hours,
         "contract_type": _detect_contract(text, given_ct),

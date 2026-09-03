@@ -58,6 +58,29 @@ def test_priority_thresholds(cfg):
     assert priority_of(50, cfg) == 3
 
 
+def test_senior_title_is_gated(cfg):
+    o = _classified("Senior Sales Director",
+                    "Lead the EMEA sales team. Business development, CRM, prospection, AI tools.",
+                    cfg, location="Paris")
+    assert "too_senior" in o["penalty_flags"]
+    assert final_score(o, cfg, cfg["weights"], None)["score"] <= 45
+
+
+def test_non_europe_location_is_gated(cfg):
+    o = _classified("Business Operations Associate",
+                    "Great generalist role, business dev, automation, AI, no code required.",
+                    cfg, location="San Francisco, California")
+    assert o["geo_ok"] is False
+    assert final_score(o, cfg, cfg["weights"], None)["score"] <= 38
+
+
+def test_remote_without_country_is_not_gated(cfg):
+    o = _classified("Founder Associate",
+                    "Remote startup, business dev, AI automation, part-time, no code.",
+                    cfg, location="Remote")
+    assert o["geo_ok"] is True
+
+
 def test_feedback_penalties_reduce_component(cfg):
     o = _classified("Growth Associate", "Prospection, outbound, CRM, IA.", cfg)
     base = final_score(o, cfg, cfg["weights"], None)["score"]

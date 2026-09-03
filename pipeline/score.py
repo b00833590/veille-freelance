@@ -51,8 +51,12 @@ def _components(offer: dict, cfg: dict, llm: dict | None) -> dict[str, dict]:
         pats = cfg["category_patterns"][cat]
         matched = sum(1 for e in pats if _rx(e[0]).search(text))
         frac = 0.3 + 0.7 * (matched / max(1, len(pats)))
+        # Titre = intitulé cible quasi exact -> plancher, même sans description.
+        title_cat, title_score = detect_category(str(offer.get("title", "") or ""), cfg)
+        if title_cat == cat and title_score >= cfg["thresholds"]["category_min"]:
+            frac = max(frac, 0.58)
     else:
-        frac = 0.3
+        frac = 0.12  # catégorie inconnue : très peu d'adéquation présumée
     frac = _blend(min(frac, 1.0), (llm or {}).get("profile_fit"), has_llm)
     out["missions_fit"] = {"_frac": frac,
                            "reason": f"catégorie {cat}, correspondance missions"}
@@ -66,7 +70,7 @@ def _components(offer: dict, cfg: dict, llm: dict | None) -> dict[str, dict]:
     elif wt == "fulltime":
         frac = 0.55 if student else 0.15
     else:
-        frac = 0.6
+        frac = 0.55  # format non précisé : incertitude, pas un signal négatif
     if "full_time" in flags and not student:
         frac = min(frac, 0.2)
     hours = offer.get("work_time_hours")
@@ -175,6 +179,30 @@ def _apply_hard_preferences(offer: dict, cfg: dict, score: int,
     return score, notes
 
 
+_GATE_SENIOR_CAP = 45
+_GATE_GEO_CAP = 38
+
+
+_GATE_NOISE_CAP = 40
+
+
+def _relevance_gate(offer: dict, cfg: dict, comps: dict, score: int) -> tuple[int, list[str]]:
+    """Plafonds toujours actifs (indépendants des préférences utilisateur)."""
+    notes: list[str] = []
+    if "too_senior" in (offer.get("penalty_flags") or []) and score > _GATE_SENIOR_CAP:
+        notes.append(f"plafonné à {_GATE_SENIOR_CAP} (poste sénior / non junior)")
+        score = _GATE_SENIOR_CAP
+    if offer.get("geo_ok") is False and score > _GATE_GEO_CAP:
+        notes.append(f"plafonné à {_GATE_GEO_CAP} (hors Paris / France / remote Europe)")
+        score = _GATE_GEO_CAP
+    # Ni dans une catégorie cible, ni de composante IA/business : c'est du bruit.
+    if (offer.get("category", "UNKNOWN") == "UNKNOWN"
+            and comps["ai_business"]["_frac"] < 0.2 and score > _GATE_NOISE_CAP):
+        notes.append(f"plafonné à {_GATE_NOISE_CAP} (hors catégories cibles, pas de dimension IA/business)")
+        score = _GATE_NOISE_CAP
+    return score, notes
+
+
 def final_score(offer: dict, cfg: dict, weights: dict,
                 llm: dict | None, penalties: dict | None = None) -> dict:
     comps = _components(offer, cfg, llm)
@@ -195,7 +223,9 @@ def final_score(offer: dict, cfg: dict, weights: dict,
         score += adj
 
     score = max(0, min(100, score))
+    score, gate_notes = _relevance_gate(offer, cfg, comps, score)
     score, notes = _apply_hard_preferences(offer, cfg, score, comps)
+    notes = gate_notes + notes
 
     breakdown["_llm_adjustment"] = {"points": adj, "max": _LLM_ADJ_CAP,
                                     "reason": (llm or {}).get("reasoning", "pas d'analyse LLM")}

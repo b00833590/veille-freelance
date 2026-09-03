@@ -20,11 +20,13 @@ def fetch(cfg: dict) -> list[RawOffer]:
         return []
     out: list[RawOffer] = []
     seen: set[str] = set()
+    locations = sc.get("locations") or []
     for category in sc.get("categories", []):
         for page in range(sc.get("pages", 2)):
+            params = [("category", category), ("page", page), ("descending", "true")]
+            params += [("location", loc) for loc in locations]
             try:
-                r = http_get(_API, params={"category": category, "page": page,
-                                           "descending": "true"})
+                r = http_get(_API, params=params)
                 if r.status_code != 200:
                     log.warning("themuse HTTP %s", r.status_code)
                     break

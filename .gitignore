@@ -12,3 +12,8 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# POC / scratch
+data/poc.db
+data/poc*.txt
+nohup.out
