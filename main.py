@@ -32,9 +32,14 @@ def cmd_init_db(_args) -> int:
 
 
 def cmd_scan(args) -> int:
+    from notify import alert
     from pipeline.run import scan
+    from report import build_html
     conn = _connect()
-    stats = scan(conn, load_config(), source_names=args.source or None)
+    cfg = load_config()
+    stats = scan(conn, cfg, source_names=args.source or None)
+    alert.maybe_send(conn, cfg, stats.get("new_priority1_ids", []))
+    build_html.build(conn, cfg)
     print(stats)
     return 0
 

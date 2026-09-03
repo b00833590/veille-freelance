@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1a1a1a;background:#f6f7f9;margin:0;padding:16px}
+  .wrap{max-width:680px;margin:0 auto}
+  h1{font-size:20px;margin:8px 0 4px}
+  .sub{color:#666;font-size:13px;margin-bottom:16px}
+  .sec{font-size:15px;font-weight:700;margin:22px 0 10px}
+  .card{background:#fff;border:1px solid #e3e5e8;border-radius:10px;padding:14px 16px;margin-bottom:12px}
+  .ttl{font-size:16px;font-weight:700;margin:0}
+  .co{color:#444;font-size:13px;margin:2px 0 8px}
+  .badges{font-size:12px;color:#333;margin-bottom:8px}
+  .badge{display:inline-block;background:#eef1f4;border-radius:6px;padding:2px 7px;margin:2px 4px 2px 0}
+  .score{float:right;font-weight:800;font-size:15px}
+  .score.p1{color:#c0392b}.score.p2{color:#1e8449}
+  ul{margin:6px 0 6px 18px;padding:0}li{margin:2px 0;font-size:13px}
+  .att li{color:#a04000}
+  .fb{font-size:12px;margin-top:8px}
+  .fb a{margin-right:8px;text-decoration:none}
+  a.cta{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;color:#1a5fb4}
+</style></head>
+<body><div class="wrap">
+  <h1>{{ title }}</h1>
+  <div class="sub">{{ subtitle }}</div>
+
+  {% for section in sections %}
+    {% if section.cards %}
+    <div class="sec">{{ section.label }}</div>
+      {% for c in section.cards %}
+      <div class="card">
+        <span class="score p{{ c.priority }}">{{ c.score }}/100</span>
+        <p class="ttl">{{ loop.index }}. {{ c.title }}</p>
+        <div class="co">{{ c.company }} · catégorie {{ c.category }}{% if c.published_at %} · publié {{ c.published_at[:10] }}{% endif %}</div>
+        <div class="badges">
+          <span class="badge">📍 {{ c.location }}</span>
+          <span class="badge">🏠 {{ c.remote }}</span>
+          <span class="badge">🕐 {{ c.work_time }}</span>
+          <span class="badge">💰 {{ c.salary }}</span>
+        </div>
+        {% if c.why %}<b style="font-size:13px">Pourquoi c'est intéressant</b>
+        <ul>{% for w in c.why %}<li>{{ w }}</li>{% endfor %}</ul>{% endif %}
+        {% if c.match_notes %}<ul>{% for m in c.match_notes %}<li>✅ {{ m }}</li>{% endfor %}</ul>{% endif %}
+        {% if c.attention %}<b style="font-size:13px">⚠️ Points d'attention</b>
+        <ul class="att">{% for a in c.attention %}<li>{{ a }}</li>{% endfor %}</ul>{% endif %}
+        <a class="cta" href="{{ c.url }}">👉 Voir l'offre</a>
+        <div class="fb">
+          <a href="{{ c.feedback.up }}">👍 intéressant</a>
+          <a href="{{ c.feedback.star }}">⭐ à regarder</a>
+          <a href="{{ c.feedback.down }}">👎 non</a>
+          <a href="{{ c.feedback.exclude }}">❌ exclure</a>
+          <a href="{{ c.feedback.applied }}">📨 postulé</a>
+        </div>
+      </div>
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  {% if dashboard_url %}<p style="font-size:13px"><a href="{{ dashboard_url }}">📊 Ouvrir le dashboard complet</a></p>{% endif %}
+</div></body></html>
