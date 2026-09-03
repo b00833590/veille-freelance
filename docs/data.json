@@ -1,0 +1,30 @@
+{
+ "generated_at": "2026-09-03T09:14:33+00:00",
+ "github": {
+  "owner": "harryrouas",
+  "repo": "veille-freelance",
+  "owner_login": "harryrouas"
+ },
+ "thresholds": {
+  "priority1": 85,
+  "priority2": 70,
+  "category_min": 2.0,
+  "llm": {
+   "min_prescore": 50
+  }
+ },
+ "offers": [],
+ "stats": {
+  "analysed": 0,
+  "retained": 0,
+  "feedback_count": 0,
+  "feedback_rate": 0,
+  "applications": 0,
+  "categories_liked": {},
+  "categories_disliked": {},
+  "liked_companies": [],
+  "reject_reasons": {},
+  "weights_history": [],
+  "last_run": null
+ }
+}
