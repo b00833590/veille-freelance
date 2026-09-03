@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille freelance / temps partiel</title>
+<style>
+  :root{--bg:#f5f6f8;--card:#fff;--bd:#e2e5e9;--fg:#1b1d21;--mut:#6b7280;--p1:#c0392b;--p2:#1e8449;--acc:#1a5fb4}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+  header{background:var(--card);border-bottom:1px solid var(--bd);padding:14px 18px}
+  h1{font-size:18px;margin:0 0 4px}
+  .meta{font-size:12px;color:var(--mut)}
+  .kpis{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:13px}
+  .kpi b{font-size:16px;display:block}
+  main{max-width:900px;margin:0 auto;padding:16px}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:5}
+  .filters select,.filters input{padding:6px 8px;border:1px solid var(--bd);border-radius:7px;font-size:13px;background:var(--card)}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:13px 15px;margin-bottom:11px}
+  .card h3{margin:0;font-size:15px}
+  .card .co{color:var(--mut);font-size:12px;margin:2px 0 7px}
+  .score{float:right;font-weight:800}
+  .score.p1{color:var(--p1)}.score.p2{color:var(--p2)}.score.p3{color:var(--mut)}
+  .badges{font-size:11px;margin:6px 0}
+  .badge{display:inline-block;background:#eef1f4;border-radius:5px;padding:2px 6px;margin:0 4px 4px 0}
+  ul{margin:5px 0 5px 17px;padding:0}li{font-size:12.5px;margin:2px 0}
+  .att li{color:#a04000}
+  details summary{cursor:pointer;font-size:12px;color:var(--acc);margin-top:5px}
+  .bd{font-size:12px;margin-top:6px}
+  .bd div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--bd);padding:3px 0}
+  .fb{margin-top:8px;font-size:12px}
+  .fb a{margin-right:9px;text-decoration:none}
+  a.cta{color:var(--acc);font-weight:600;font-size:13px;text-decoration:none}
+  .statsbox{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px;margin-top:20px;font-size:13px}
+  .statsbox h2{font-size:15px;margin:0 0 8px}
+  code{background:#eef1f4;padding:1px 4px;border-radius:4px}
+  .empty{color:var(--mut);text-align:center;padding:40px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🔎 Veille freelance / temps partiel</h1>
+  <div class="meta" id="meta">Chargement…</div>
+  <div class="kpis" id="kpis"></div>
+</header>
+<main>
+  <div class="filters">
+    <input id="q" placeholder="🔍 entreprise / titre…" size="18">
+    <select id="cat"><option value="">Toutes catégories</option><option>A</option><option>B</option><option>C</option><option value="UNKNOWN">UNKNOWN</option></select>
+    <select id="loc"><option value="">Lieu : tous</option><option value="remote">Remote</option><option value="hybrid">Hybride</option><option value="paris">Paris/IdF</option></select>
+    <select id="status"><option value="">Statut : tous</option><option value="new">Nouvelle</option><option value="seen">Vue</option><option value="interesting">Intéressante</option><option value="applied">Candidature</option><option value="obtained">Obtenue</option><option value="ignored">Ignorée</option><option value="excluded">Exclue</option></select>
+    <select id="minscore"><option value="0">Score ≥ 0</option><option value="50">≥ 50</option><option value="70" selected>≥ 70</option><option value="85">≥ 85</option></select>
+    <select id="sort"><option value="score">Tri : score</option><option value="date">Tri : date</option></select>
+  </div>
+  <div id="list"></div>
+  <div class="statsbox" id="stats"></div>
+</main>
+<script>
+const E = (t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
+let DATA = {offers:[], stats:{}};
+
+function card(o){
+  const c = E('div','card');
+  c.innerHTML = `<span class="score p${o.priority}">${o.score}/100</span>
+    <h3>${o.title}</h3>
+    <div class="co">${o.company} · cat. ${o.category} · <b>${o.status}</b> · ${(o.sources||[]).join(', ')}</div>
+    <div class="badges">
+      <span class="badge">📍 ${o.location}</span><span class="badge">🏠 ${o.remote}</span>
+      <span class="badge">🕐 ${o.work_time}</span><span class="badge">💰 ${o.salary}</span></div>`;
+  if(o.why && o.why.length){ const u=E('ul'); o.why.forEach(w=>u.appendChild(E('li',null,w))); c.appendChild(E('b',null,"Pourquoi c'est intéressant")); c.appendChild(u); }
+  if(o.match_notes && o.match_notes.length){ const u=E('ul'); o.match_notes.forEach(m=>u.appendChild(E('li',null,'✅ '+m))); c.appendChild(u); }
+  if(o.attention && o.attention.length){ const u=E('ul','att'); o.attention.forEach(a=>u.appendChild(E('li',null,'⚠️ '+a))); c.appendChild(u); }
+  const det = E('details'); det.appendChild(E('summary',null,'détail du score'));
+  const bd = E('div','bd');
+  Object.entries(o.score_breakdown||{}).forEach(([k,v])=>{
+    if(k.startsWith('_') && !v.reason) return;
+    bd.appendChild(E('div',null,`<span>${k}</span><span>${v.points}/${v.max} — ${v.reason||''}</span>`));
+  });
+  det.appendChild(bd); c.appendChild(det);
+  c.appendChild(E('div',null,`<a class="cta" href="${o.url}" target="_blank">👉 Voir l'offre</a>`));
+  const f=o.feedback||{};
+  c.appendChild(E('div','fb',
+    `<a href="${f.up}" target="_blank">👍</a><a href="${f.star}" target="_blank">⭐</a>`+
+    `<a href="${f.down}" target="_blank">👎</a><a href="${f.exclude}" target="_blank">❌</a>`+
+    `<a href="${f.applied}" target="_blank">📨 postulé</a>`));
+  return c;
+}
+
+function render(){
+  const q=q_.value.toLowerCase(), cat=cat_.value, loc=loc_.value, st=status_.value, ms=+minscore_.value;
+  let rows = DATA.offers.filter(o=>{
+    if(cat && o.category!==cat) return false;
+    if(st && o.status!==st) return false;
+    if(o.score < ms) return false;
+    if(loc==='remote' && o.remote!=='Remote') return false;
+    if(loc==='hybrid' && o.remote!=='Hybride') return false;
+    if(loc==='paris' && !o.is_paris) return false;
+    if(q && !(o.title+' '+o.company).toLowerCase().includes(q)) return false;
+    return true;
+  });
+  rows.sort((a,b)=> sort_.value==='date' ? (b.discovered_at||'').localeCompare(a.discovered_at||'') : b.score-a.score);
+  const list=document.getElementById('list'); list.innerHTML='';
+  if(!rows.length){ list.appendChild(E('div','empty','Aucune offre ne correspond à ces filtres.')); return; }
+  rows.forEach(o=>list.appendChild(card(o)));
+}
+
+function renderStats(){
+  const s=DATA.stats||{}; const kpi=document.getElementById('kpis');
+  kpi.innerHTML = `
+    <div class="kpi"><b>${s.analysed||0}</b>offres analysées</div>
+    <div class="kpi"><b>${s.retained||0}</b>retenues (P1/P2)</div>
+    <div class="kpi"><b>${s.feedback_count||0}</b>feedbacks</div>
+    <div class="kpi"><b>${s.applications||0}</b>candidatures</div>`;
+  const box=document.getElementById('stats');
+  const wh=(s.weights_history||[]).slice(-1)[0];
+  box.innerHTML = `<h2>📊 Apprentissage & feedback</h2>
+    <p>Catégories appréciées : <code>${JSON.stringify(s.categories_liked||{})}</code><br>
+    Catégories rejetées : <code>${JSON.stringify(s.categories_disliked||{})}</code><br>
+    Entreprises appréciées : ${(s.liked_companies||[]).join(', ')||'—'}<br>
+    Raisons de rejet : <code>${JSON.stringify(s.reject_reasons||{})}</code><br>
+    Poids actuels : <code>${wh?JSON.stringify(wh.weights):'défauts'}</code>${wh?` (confiance ${wh.confidence}, ${wh.n} feedbacks)`:''}</p>
+    <p class="meta">Feedback = ouvre une issue GitHub pré-remplie ; elle est traitée automatiquement puis fermée.</p>`;
+}
+
+const q_=document.getElementById('q'), cat_=document.getElementById('cat'), loc_=document.getElementById('loc'),
+      status_=document.getElementById('status'), minscore_=document.getElementById('minscore'), sort_=document.getElementById('sort');
+[q_,cat_,loc_,status_,minscore_,sort_].forEach(el=>el.addEventListener('input',render));
+
+fetch('./data.json').then(r=>r.json()).then(d=>{
+  DATA=d;
+  document.getElementById('meta').textContent =
+    `Généré le ${(d.generated_at||'').replace('T',' ').slice(0,16)} · ${d.offers.length} offres actives`;
+  renderStats(); render();
+}).catch(e=>{ document.getElementById('meta').textContent='Erreur de chargement de data.json'; });
+</script>
+</body>
+</html>
