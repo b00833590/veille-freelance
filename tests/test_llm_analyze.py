@@ -40,6 +40,7 @@ class _FakeClient:
 @pytest.fixture(autouse=True)
 def _no_throttle(monkeypatch):
     monkeypatch.setattr(llm_analyze, "_MIN_INTERVAL", 0.0)
+    monkeypatch.setattr(llm_analyze.time, "sleep", lambda *a, **k: None)
 
 
 @pytest.fixture
@@ -86,7 +87,15 @@ def test_markdown_fenced_json_is_recovered(patched):
 
 def test_should_analyze_gates(cfg):
     thr = cfg["thresholds"]["llm"]["min_prescore"]
-    assert should_analyze({"pre_score": thr + 5, "excluded": False, "llm_analysis": None}, cfg)
-    assert not should_analyze({"pre_score": thr - 5, "excluded": False, "llm_analysis": None}, cfg)
-    assert not should_analyze({"pre_score": 90, "excluded": True, "llm_analysis": None}, cfg)
-    assert not should_analyze({"pre_score": 90, "excluded": False, "llm_analysis": {}}, cfg)
+    base = {"pre_score": thr + 5, "excluded": False, "llm_analysis": None}
+    # catégorie cible -> analysé
+    assert should_analyze({**base, "category": "A"}, cfg)
+    # catégorie inconnue mais pré-score assez haut -> analysé
+    assert should_analyze({**base, "pre_score": 65, "category": "UNKNOWN"}, cfg)
+    # catégorie inconnue + pré-score moyen -> PAS analysé (bruit)
+    assert not should_analyze({**base, "category": "UNKNOWN"}, cfg)
+    # sous le seuil
+    assert not should_analyze({"pre_score": thr - 5, "excluded": False,
+                               "llm_analysis": None, "category": "A"}, cfg)
+    assert not should_analyze({**base, "category": "A", "excluded": True}, cfg)
+    assert not should_analyze({**base, "category": "A", "llm_analysis": {}}, cfg)

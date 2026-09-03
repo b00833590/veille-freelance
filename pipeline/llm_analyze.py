@@ -18,15 +18,19 @@ _MIN_INTERVAL = 2.5     # secondes entre 2 appels (marge sous les limites free t
 _HTTP_TIMEOUT_MS = 25000
 _last_call = [0.0]
 
-# Disjoncteur : au 1er signe de quota épuisé, on coupe le LLM pour tout le run.
+# Disjoncteur : au 1er VRAI dépassement de quota (429), on coupe le LLM pour tout le run.
+# Un 500/503 "overloaded" n'est PAS un quota -> on réessaie.
 _circuit_open = [False]
+_server_errors = [0]             # 500/503 consécutifs -> coupe après 6
 _dead_models: set[str] = set()   # modèles 404 pour ce run -> on ne les rappelle pas
-_QUOTA_MARKERS = ("resource_exhausted", "429", "rate_limit", "quota exceeded",
-                  "quota_exceeded", "exceeded your current quota")
+_QUOTA_MARKERS = ("429", "too many requests", "quota exceeded", "quota_exceeded",
+                  "exceeded your current quota", "requests per day", "per-day")
+_MAX_SERVER_ERRORS = 6
 
 
 def reset_circuit() -> None:
     _circuit_open[0] = False
+    _server_errors[0] = 0
     _last_call[0] = 0.0
     _dead_models.clear()
 
@@ -62,7 +66,12 @@ def should_analyze(offer: dict, cfg: dict) -> bool:
         return False
     if offer.get("excluded") or offer.get("llm_analysis") is not None:
         return False
-    return offer.get("pre_score", 0) >= cfg["thresholds"]["llm"]["min_prescore"]
+    pre = offer.get("pre_score", 0)
+    if pre < cfg["thresholds"]["llm"]["min_prescore"]:
+        return False
+    # On ne dépense un appel LLM que sur une offre déjà dans une catégorie cible,
+    # ou déjà bien notée : pas sur le bruit (serveur/US enterprise avec longue JD).
+    return offer.get("category") in ("A", "B", "C") or pre >= 60
 
 
 def _build_prompt(offer: dict) -> str:
@@ -120,9 +129,10 @@ def analyze(offer: dict, api_key: str | None, models: tuple[str, ...] | None = N
     for model in (models or _MODELS):
         if model in _dead_models:
             continue
-        for attempt in (1, 2):   # 2e essai = transitoire (500/503)
+        for attempt in (1, 2, 3):
             try:
                 raw = _call_model(client, model, prompt)
+                _server_errors[0] = 0
                 return _parse(raw).model_dump()
             except (ValidationError, json.JSONDecodeError) as e:
                 log.warning("LLM %s: JSON invalide (essai %d): %s", model, attempt, e)
@@ -130,19 +140,24 @@ def analyze(offer: dict, api_key: str | None, models: tuple[str, ...] | None = N
             except Exception as e:  # réseau, quota, timeout, modèle inconnu…
                 emsg = str(e).lower()
                 if _is_quota_error(e):
-                    log.warning("LLM: quota atteint — LLM coupé pour ce run, "
-                                "fallback déterministe pour le reste")
+                    log.warning("LLM: quota journalier atteint — LLM coupé pour ce run")
                     _circuit_open[0] = True
                     return None
-                if "not_found" in emsg or "404" in emsg or "no longer available" in emsg:
-                    log.warning("LLM: modèle %s indisponible (à mettre à jour dans config.yaml)", model)
+                if "not_found" in emsg or "no longer available" in emsg or " 404" in emsg:
+                    log.warning("LLM: modèle %s indisponible (mettre à jour config.yaml)", model)
                     _dead_models.add(model)
                     break
-                if attempt == 1 and ("server" in emsg or "503" in emsg or "500" in emsg
-                                     or "unavailable" in emsg or "timeout" in emsg):
-                    time.sleep(3)
+                # 500 / 503 / overloaded / timeout : transitoire -> backoff et réessai
+                _server_errors[0] += 1
+                if _server_errors[0] >= _MAX_SERVER_ERRORS:
+                    log.warning("LLM: %d erreurs serveur d'affilée — LLM coupé pour ce run",
+                                _server_errors[0])
+                    _circuit_open[0] = True
+                    return None
+                if attempt < 3:
+                    time.sleep(4 * attempt)
                     continue
-                log.warning("LLM %s: échec (%s)", model, type(e).__name__)
+                log.warning("LLM %s: échec après 3 essais (%s)", model, type(e).__name__)
                 break
     log.info("Analyse LLM indisponible pour « %s » — score déterministe", offer.get("title"))
     return None

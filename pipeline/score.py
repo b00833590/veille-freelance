@@ -47,14 +47,15 @@ def _components(offer: dict, cfg: dict, llm: dict | None) -> dict[str, dict]:
 
     # 1. Adéquation missions -------------------------------------------------
     cat = offer.get("category") or detect_category(text, cfg)[0]
+    title_cat, title_score = detect_category(str(offer.get("title", "") or ""), cfg)
+    strong_title = title_cat in ("A", "B", "C") and title_score >= cfg["thresholds"]["category_min"]
     if cat in cfg.get("category_patterns", {}):
         pats = cfg["category_patterns"][cat]
         matched = sum(1 for e in pats if _rx(e[0]).search(text))
         frac = 0.3 + 0.7 * (matched / max(1, len(pats)))
-        # Titre = intitulé cible quasi exact -> plancher, même sans description.
-        title_cat, title_score = detect_category(str(offer.get("title", "") or ""), cfg)
-        if title_cat == cat and title_score >= cfg["thresholds"]["category_min"]:
-            frac = max(frac, 0.58)
+        # Titre = intitulé cible quasi exact -> plancher élevé, même sans description.
+        if strong_title and title_cat == cat:
+            frac = max(frac, 0.72)
     else:
         frac = 0.12  # catégorie inconnue : très peu d'adéquation présumée
     frac = _blend(min(frac, 1.0), (llm or {}).get("profile_fit"), has_llm)
@@ -84,6 +85,12 @@ def _components(offer: dict, cfg: dict, llm: dict | None) -> dict[str, dict]:
     n_ai = _count(cfg.get("ai_terms", []), text)
     n_biz = _count(cfg.get("business_terms", []), text)
     frac = min(1.0, n_ai * 0.16 + n_biz * 0.11)
+    # Les catégories A (AI ops) et C (formation IA) sont intrinsèquement IA :
+    # plancher même quand la description manque (offre LinkedIn sans détail).
+    if strong_title and title_cat in ("A", "C"):
+        frac = max(frac, 0.42)
+    elif strong_title and title_cat == "B":
+        frac = max(frac, 0.3)
     frac = _blend(frac, (llm or {}).get("ai_business_interest"), has_llm)
     out["ai_business"] = {"_frac": frac,
                           "reason": f"{n_ai} termes IA, {n_biz} termes business"}
