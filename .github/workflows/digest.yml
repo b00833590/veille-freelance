@@ -38,3 +38,5 @@ jobs:
           git add data/veille.db
           git diff --cached --quiet || git commit -m "chore: digest $(date -u +%FT%TZ) [skip ci]"
           git push
+
+# workflow enregistré
