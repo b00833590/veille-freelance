@@ -281,7 +281,7 @@ reason_signal_map:
   too_technical:      { min_count: 2, component: "non_technical", penalty: 5 }
   too_time_consuming: { min_count: 3, component: "student_compat", penalty: 5 }
   not_enough_ai:      { min_count: 3, component: "ai_business", penalty: 5 }
-  not_enough_business:{ min_count: 3, component: "ai_business", penalty: 5 }
+  not_enough_business: { min_count: 3, component: "ai_business", penalty: 5 }
   low_pay:            { min_count: 3, component: "cv_potential", penalty: 3 }
   location:           { min_count: 3, component: "location", penalty: 5 }
   hours:             { min_count: 3, component: "student_compat", penalty: 8 }
