@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import logging
+import time
 from pathlib import Path
 
 from pydantic import BaseModel, Field, ValidationError
@@ -10,8 +11,18 @@ from pydantic import BaseModel, Field, ValidationError
 log = logging.getLogger("veille.llm")
 
 _PROMPT = Path(__file__).parents[1] / "prompts" / "analyze_offer.md"
-_MODELS = ("gemini-2.5-flash", "gemini-2.5-flash-lite")
+# flash-lite d'abord : quota free tier plus large (15 RPM / 1000 RPD) que flash.
+_MODELS = ("gemini-2.5-flash-lite", "gemini-2.5-flash")
 _DESC_LIMIT = 4000
+_MIN_INTERVAL = 4.5   # secondes entre 2 appels (reste sous les limites free tier)
+_last_call = [0.0]
+
+
+def _throttle() -> None:
+    wait = _MIN_INTERVAL - (time.monotonic() - _last_call[0])
+    if wait > 0:
+        time.sleep(wait)
+    _last_call[0] = time.monotonic()
 
 
 class LLMAnalysis(BaseModel):
@@ -57,6 +68,7 @@ def _parse(raw: str) -> LLMAnalysis:
 
 
 def _call_model(client, model: str, prompt: str) -> str:
+    _throttle()
     resp = client.models.generate_content(
         model=model,
         contents=prompt,

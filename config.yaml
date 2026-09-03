@@ -146,7 +146,9 @@ thresholds:
   priority2: 70
   category_min: 2.0          # score minimal de détection de catégorie
   llm:
-    min_prescore: 50
+    min_prescore: 38   # bas : beaucoup d'offres LinkedIn n'ont pas de description
+                       # (IP CI bloquée) -> on laisse le LLM juger sur le titre. Gemini free tier.
+    max_per_run: 60    # plafond d'appels LLM par scan (les meilleurs pré-scores d'abord)
 
 # -----------------------------------------------------------------------------
 #  Filtres déterministes.

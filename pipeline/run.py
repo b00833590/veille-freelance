@@ -86,7 +86,8 @@ def _upsert_with_dedup(conn, raw: dict) -> tuple[str, bool]:
 
 
 def _score_offer(conn, cfg, offer: dict, weights: dict, penalties: dict,
-                 api_key: str | None, allow_llm: bool) -> tuple[dict, bool]:
+                 api_key: str | None, allow_llm: bool,
+                 llm_budget: list[int] | None = None) -> tuple[dict, bool]:
     fields = classify(offer, cfg)
     offer = {**offer, **fields}
     pre, _ = score.prescore(offer, cfg)
@@ -94,11 +95,14 @@ def _score_offer(conn, cfg, offer: dict, weights: dict, penalties: dict,
 
     used_llm = False
     llm = offer.get("llm_analysis")
-    if allow_llm and not fields["excluded"] and should_analyze(offer, cfg):
+    budget_ok = llm_budget is None or llm_budget[0] > 0
+    if allow_llm and budget_ok and not fields["excluded"] and should_analyze(offer, cfg):
         result = analyze(offer, api_key)
         if result is not None:
             llm = result
             used_llm = True
+            if llm_budget is not None:
+                llm_budget[0] -= 1
 
     final = score.final_score(offer, cfg, weights, llm, penalties)
     update = {
@@ -152,18 +156,30 @@ def scan(conn, cfg: dict, *, source_names=None) -> dict:
     n_p1 = n_p2 = 0
     new_p1: list[str] = []
     rows = conn.execute(
-        "SELECT * FROM offers WHERE archived = 0 AND status IN "
+        "SELECT id FROM offers WHERE archived = 0 AND status IN "
         f"({','.join('?' * len(_RESCORE_STATUSES))})", _RESCORE_STATUSES
     ).fetchall()
+
+    # Ordre de traitement : meilleur pré-score d'abord, pour que le budget LLM
+    # aille aux offres les plus prometteuses si les nouvelles offres sont nombreuses.
+    scored_pre = []
     for row in rows:
         offer = db.get_offer(conn, row["id"])
+        offer = {**offer, **classify(offer, cfg)}
+        pre, _ = score.prescore(offer, cfg)
+        scored_pre.append((pre, row["id"]))
+    scored_pre.sort(reverse=True)
+
+    llm_budget = [cfg["thresholds"]["llm"].get("max_per_run", 60)]
+    for _pre, oid in scored_pre:
+        offer = db.get_offer(conn, oid)
         update, used_llm = _score_offer(conn, cfg, offer, weights, penalties,
-                                        api_key, allow_llm=True)
+                                        api_key, allow_llm=True, llm_budget=llm_budget)
         n_llm += int(used_llm)
         if update["priority"] == 1:
             n_p1 += 1
-            if row["id"] in new_ids:
-                new_p1.append(row["id"])
+            if oid in new_ids:
+                new_p1.append(oid)
         elif update["priority"] == 2:
             n_p2 += 1
 

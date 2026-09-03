@@ -37,6 +37,11 @@ class _FakeClient:
         self.models = _FakeModels(outputs)
 
 
+@pytest.fixture(autouse=True)
+def _no_throttle(monkeypatch):
+    monkeypatch.setattr(llm_analyze, "_MIN_INTERVAL", 0.0)
+
+
 @pytest.fixture
 def patched(monkeypatch):
     holder = {}
@@ -80,7 +85,8 @@ def test_markdown_fenced_json_is_recovered(patched):
 
 
 def test_should_analyze_gates(cfg):
-    assert should_analyze({"pre_score": 60, "excluded": False, "llm_analysis": None}, cfg)
-    assert not should_analyze({"pre_score": 40, "excluded": False, "llm_analysis": None}, cfg)
+    thr = cfg["thresholds"]["llm"]["min_prescore"]
+    assert should_analyze({"pre_score": thr + 5, "excluded": False, "llm_analysis": None}, cfg)
+    assert not should_analyze({"pre_score": thr - 5, "excluded": False, "llm_analysis": None}, cfg)
     assert not should_analyze({"pre_score": 90, "excluded": True, "llm_analysis": None}, cfg)
     assert not should_analyze({"pre_score": 90, "excluded": False, "llm_analysis": {}}, cfg)
