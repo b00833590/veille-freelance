@@ -43,3 +43,5 @@ jobs:
           git add data/veille.db docs/
           git diff --cached --quiet || git commit -m "chore: scan $(date -u +%FT%TZ) [skip ci]"
           git push
+
+# workflow enregistré via ce commit
