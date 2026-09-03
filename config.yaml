@@ -1,0 +1,298 @@
+# =============================================================================
+#  Configuration du système de veille. Tout le comportement est réglable ici.
+#  Aucun secret : les clés API viennent des variables d'environnement (.env.example).
+# =============================================================================
+
+github:
+  owner: "harryrouas"            # <-- remplace par ton pseudo GitHub
+  repo: "veille-freelance"       # <-- remplace par le nom du repo
+  owner_login: "harryrouas"      # auteur autorisé à envoyer du feedback
+
+# -----------------------------------------------------------------------------
+#  Niveau 1 — recherche large. Requêtes par catégorie (FR + EN).
+# -----------------------------------------------------------------------------
+search_queries:
+  A:  # Bras droit fondateur / Ops / AI Ops
+    - "founder associate"
+    - "founder's associate"
+    - "bras droit fondateur"
+    - "bras droit du dirigeant"
+    - "chief of staff intern"
+    - "chief of staff"
+    - "operations intern"
+    - "business operations intern"
+    - "operations associate"
+    - "AI operations"
+    - "AI ops"
+    - "AI project manager"
+    - "AI project coordinator"
+    - "AI business analyst"
+    - "chef de projet IA"
+    - "project manager IA"
+    - "assistant business development IA"
+    - "entrepreneurial assistant"
+    - "startup generalist"
+    - "generalist intern"
+  B:  # SDR / Business Development / Growth
+    - "sales development representative"
+    - "SDR"
+    - "business development representative"
+    - "business developer"
+    - "sales intern"
+    - "sales assistant"
+    - "growth intern"
+    - "growth associate"
+    - "outbound specialist"
+    - "outbound automation"
+    - "sales operations"
+    - "revenue operations"
+    - "RevOps"
+  C:  # Formation IA / Consulting IA junior
+    - "formateur IA"
+    - "AI trainer"
+    - "AI training consultant"
+    - "consultant IA junior"
+    - "AI consultant intern"
+    - "AI consultant"
+    - "AI facilitator"
+    - "facilitateur IA"
+    - "AI adoption consultant"
+    - "AI enablement"
+    - "AI transformation intern"
+
+# -----------------------------------------------------------------------------
+#  Sources. `enabled: false` désactive proprement une source.
+# -----------------------------------------------------------------------------
+sources:
+  france_travail:
+    enabled: true
+    departements: ["75", "77", "78", "91", "92", "93", "94", "95"]
+    type_contrat: ["MIS", "CDD", "DDI", "SAI", "LIB"]   # mission, CDD, CDD insertion, saisonnier, libéral
+    max_per_query: 50
+  adzuna:
+    enabled: true
+    country: "fr"
+    where: "Paris"
+    max_days_old: 30
+    results_per_page: 50
+    pages: 2
+  themuse:
+    enabled: true
+    categories: ["Business Operations", "Sales", "Project Management", "Marketing"]
+    locations: ["Paris, France", "Flexible / Remote"]
+    pages: 2
+  remotive:
+    enabled: true
+    limit_per_query: 40
+  jobicy:
+    enabled: true
+    count: 50
+    geo: "europe"
+  hn_whoishiring:
+    enabled: true
+    max_comments: 400
+  wttj:
+    enabled: true
+    # Index Algolia public de WTTJ (peut être re-généré par WTTJ sans préavis).
+    algolia_app_id: "CSEKHVMS53"
+    algolia_api_key: "02f3f7bb3e6c9a5e0f1e5a4d3c2b1a09"   # placeholder — voir README
+    index: "wttj_jobs_production_fr"
+    hits_per_page: 40
+  linkedin:
+    enabled: true
+    location: "France"
+    time_filter: "r604800"     # r86400 = 24h, r604800 = 7j
+    pages: 3                    # 25 offres / page
+    delay_seconds: 3
+  email_inbox:
+    enabled: true
+    imap_host: "imap.gmail.com"
+    label: "Veille"
+    max_messages: 60
+
+# -----------------------------------------------------------------------------
+#  Scoring — pondération initiale (= cahier des charges). Somme = 100.
+# -----------------------------------------------------------------------------
+weights:
+  missions_fit: 25
+  student_compat: 25
+  ai_business: 20
+  non_technical: 15
+  location: 10
+  cv_potential: 5
+
+thresholds:
+  priority1: 85
+  priority2: 70
+  category_min: 2.0          # score minimal de détection de catégorie
+  llm:
+    min_prescore: 50
+
+# -----------------------------------------------------------------------------
+#  Filtres déterministes.
+# -----------------------------------------------------------------------------
+exclude_title_patterns:
+  - '\b(machine learning|ml|deep learning|data)\s+(engineer|scientist)\b'
+  - '\bdata engineer\b'
+  - '\bml ?ops\b'
+  - '\bai engineer\b'
+  - '\b(software|backend|back-end|frontend|front-end|full ?stack)\s+(engineer|developer|dev)\b'
+  - '\bcomputer vision\b'
+  - '\bnlp engineer\b'
+  - '\bresearch scientist\b'
+  - '\bresearch engineer\b'
+  - '\bdéveloppeur\b'
+  - '\bdevops\b'
+  - '\bsite reliability\b'
+
+exclude_description_patterns:
+  - "diplôme d.ingénieur"
+  - "école d.ingénieur"
+  - "master.{0,20}(data science|machine learning)"
+  - "msc.{0,20}(data science|machine learning)"
+  - "phd in (computer science|machine learning|mathematics|statistics)"
+  - '\b5\+? (years|ans).{0,30}(software|development|engineering)'
+  - "strong (coding|programming) (skills|background)"
+  - "production-grade (code|ml|models)"
+
+# Signaux de disponibilité incompatible étudiant. Pénalité (pas rejet direct)
+# sauf si un "student_arrangement" est explicitement mentionné.
+penalty_patterns:
+  full_time:
+    - '\bfull[- ]time\b'
+    - "temps plein"
+    - "\\b(35|37|39)\\s?h(eures)?\\b"
+    - "du lundi au vendredi"
+    - "présence quotidienne"
+    - "on[- ]site 5 days"
+  permanent:
+    - '\bCDI\b'
+    - "permanent contract"
+
+student_arrangement_patterns:
+  - "aménagement étudiant"
+  - "compatible avec.{0,20}études"
+  - "student[- ]friendly"
+  - "flexible.{0,20}(students|étudiants)"
+  - "part[- ]time possible"
+  - "temps partiel possible"
+  - "alternance"
+  - "\\bstage\\b"
+  - "work[- ]study"
+
+# Patterns de détection de catégorie (poids additionnés, argmax).
+category_patterns:
+  A:
+    - ['founder.?s? associate', 3]
+    - ['bras droit', 3]
+    - ['chief of staff', 3]
+    - ['operations (intern|associate|manager)', 2]
+    - ['business operations', 2]
+    - ['ai ops|ai operations', 3]
+    - ['chef de projet ia|project manager ia', 3]
+    - ['startup generalist|generalist intern', 2]
+    - ['entrepreneurial assistant', 2]
+    - ['automatis|workflow|make\.com|zapier|n8n|airtable', 1]
+  B:
+    - ['\bsdr\b|sales development representative', 3]
+    - ['\bbdr\b|business development representative', 3]
+    - ['business developer', 2]
+    - ['growth (intern|associate|lead)?', 2]
+    - ['outbound', 2]
+    - ['sales (intern|assistant|operations)', 2]
+    - ['revops|revenue operations', 2]
+    - ['cold call|prospection|lead generation|qualification', 1]
+  C:
+    - ['ai trainer|formateur ia|formatrice ia', 3]
+    - ['ai (training )?consultant|consultant ia', 3]
+    - ['ai facilitator|facilitateur ia', 3]
+    - ['ai enablement|ai adoption', 3]
+    - ['ai transformation', 2]
+    - ['animation.{0,15}formation|workshop|atelier', 1]
+    - ['accompagnement.{0,15}(client|collaborateur|changement)', 1]
+
+# Termes qui augmentent la composante "intérêt IA / business".
+ai_terms:
+  - "intelligence artificielle"
+  - '\bIA\b'
+  - '\bAI\b'
+  - "chatgpt"
+  - "gpt-4"
+  - "claude"
+  - "gemini"
+  - "copilot"
+  - "llm"
+  - "generative ai|ia générative"
+  - "prompt"
+  - "automation|automatisation"
+  - "make.com|zapier|n8n"
+business_terms:
+  - "business development"
+  - "go-to-market|gtm"
+  - "prospection|prospect"
+  - "proposition commerciale|proposal"
+  - "analyse de marché|market research"
+  - "concurrenti|competitive"
+  - "présentation|deck|pitch"
+  - "crm|hubspot|salesforce|pipedrive"
+  - "process|processus|workflow"
+
+# Types d'entreprise qui augmentent "potentiel CV".
+company_bonus_terms:
+  - "startup|scale-up|scale up"
+  - "fintech"
+  - "b2b saas|saas b2b"
+  - "cabinet de conseil|consulting|agence ia|ai agency"
+  - "série a|seed|pre-seed|early-stage|amorçage"
+
+# -----------------------------------------------------------------------------
+#  Localisation.
+# -----------------------------------------------------------------------------
+locations:
+  paris_terms:
+    - "paris"
+    - "île-de-france|ile-de-france|idf"
+    - "\\b(75|77|78|91|92|93|94|95)\\d{3}\\b"
+    - "boulogne|neuilly|levallois|montreuil|saint-denis|nanterre|issy"
+  remote_terms:
+    - "télétravail|remote|full remote|100% remote"
+    - "à distance"
+    - "distributed team"
+  hybrid_terms:
+    - "hybride|hybrid"
+    - "\\d\\s?(jours?|days?)\\s?(par|/|a|à)\\s?(semaine|week)"
+    - "partiel.{0,10}présentiel"
+
+# -----------------------------------------------------------------------------
+#  Préférences EXPLICITES — priorité absolue, jamais écrasées par l'apprentissage.
+#  Décommente / ajuste selon tes retours.
+# -----------------------------------------------------------------------------
+hard_preferences:
+  # no_cold_calling: false          # true => plafonne le score des offres à forte prospection tel.
+  # min_ai_ratio: 0.0               # 0..1 : part minimale de contenu IA attendue
+  # company_size_max: null          # ex 50
+  cap_if_full_time: 45              # score max si full-time sans aménagement étudiant
+  exclude_companies: []             # liste grise (alimentée aussi par le feedback "exclude")
+  exclude_if: []                    # patterns regex qui excluent l'offre
+
+# Mapping raison-de-rejet -> signal de scoring ajusté (nb d'occurrences -> effet).
+reason_signal_map:
+  too_sales:          { min_count: 3, component: "missions_fit", penalty: 5 }
+  too_technical:      { min_count: 2, component: "non_technical", penalty: 5 }
+  too_time_consuming: { min_count: 3, component: "student_compat", penalty: 5 }
+  not_enough_ai:      { min_count: 3, component: "ai_business", penalty: 5 }
+  not_enough_business:{ min_count: 3, component: "ai_business", penalty: 5 }
+  low_pay:            { min_count: 3, component: "cv_potential", penalty: 3 }
+  location:           { min_count: 3, component: "location", penalty: 5 }
+  hours:             { min_count: 3, component: "student_compat", penalty: 8 }
+
+# -----------------------------------------------------------------------------
+#  Digest & nettoyage.
+# -----------------------------------------------------------------------------
+digest:
+  max_items: 15
+  explore_ratio: 0.15        # 15% de places réservées à des offres exploratoires
+  explore_min_raw_score: 60
+
+cleanup:
+  max_age_days: 45
