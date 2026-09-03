@@ -1,8 +1,11 @@
 import json
 
 from report import build_html
+from settings import load_config
 from store import db
 from tests.conftest import make_offer
+
+OWNER = load_config()["github"]["owner_login"]
 
 _BD = {"missions_fit": {"points": 20, "max": 25, "reason": "cat A"},
        "location": {"points": 9, "max": 10, "reason": "remote"}}
@@ -30,7 +33,7 @@ def test_feedback_links_use_owner_repo(conn, cfg, tmp_path):
     build_html.build(conn, cfg, out_dir=str(tmp_path))
     data = json.loads((tmp_path / "data.json").read_text(encoding="utf-8"))
     up = data["offers"][0]["feedback"]["up"]
-    assert "github.com/harryrouas/veille-freelance/issues/new" in up
+    assert f"github.com/{OWNER}/veille-freelance/issues/new" in up
     assert "title=fb:abc:up" in up
 
 

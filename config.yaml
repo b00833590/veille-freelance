@@ -4,9 +4,9 @@
 # =============================================================================
 
 github:
-  owner: "harryrouas"            # <-- remplace par ton pseudo GitHub
-  repo: "veille-freelance"       # <-- remplace par le nom du repo
-  owner_login: "harryrouas"      # auteur autorisé à envoyer du feedback
+  owner: "b00833590"             # pseudo GitHub (propriétaire du repo)
+  repo: "veille-freelance"       # nom du repo
+  owner_login: "b00833590"       # seul auteur autorisé à envoyer du feedback via issue
 
 # -----------------------------------------------------------------------------
 #  Niveau 1 — recherche large. Requêtes par catégorie (FR + EN).

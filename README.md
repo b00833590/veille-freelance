@@ -101,7 +101,7 @@ git push -u origin build/veille-system      # ou merge sur main d'abord
 | `GEMINI_API_KEY` | https://aistudio.google.com/apikey | 2 min |
 | `FT_CLIENT_ID` + `FT_CLIENT_SECRET` | https://francetravail.io → créer une app → API « Offres d'emploi v2 » | ~10 min |
 | `ADZUNA_APP_ID` + `ADZUNA_APP_KEY` | https://developer.adzuna.com | 3 min |
-| `GMAIL_USER` | `harryrouas@gmail.com` | — |
+| `GMAIL_USER` | ton adresse Gmail | — |
 | `GMAIL_APP_PASSWORD` | https://myaccount.google.com/apppasswords (2FA requise) | 2 min |
 
 ### c. Déclarer les secrets

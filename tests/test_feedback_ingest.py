@@ -3,8 +3,11 @@ import json
 import pytest
 
 from feedback import ingest
+from settings import load_config
 from store import db
 from tests.conftest import make_offer
+
+OWNER = load_config()["github"]["owner_login"]
 
 
 @pytest.fixture
@@ -30,7 +33,7 @@ def test_parse_reason():
 
 def test_apply_records_and_updates_status(conn, cfg, offer):
     msg = ingest.handle(conn, cfg, title="fb:abc123:down",
-                        body="reason: too_technical", author="harryrouas")
+                        body="reason: too_technical", author=OWNER)
     assert "enregistré" in msg
     assert db.get_offer(conn, "abc123")["status"] == "ignored"
     row = conn.execute("SELECT * FROM feedback WHERE offer_id='abc123'").fetchone()
@@ -38,7 +41,7 @@ def test_apply_records_and_updates_status(conn, cfg, offer):
 
 
 def test_exclude_adds_company_to_greylist(conn, cfg, offer):
-    ingest.handle(conn, cfg, title="fb:abc123:exclude", body="", author="harryrouas")
+    ingest.handle(conn, cfg, title="fb:abc123:exclude", body="", author=OWNER)
     assert db.get_offer(conn, "abc123")["status"] == "excluded"
     assert "badco" in json.loads(db.get_state(conn, "greylist", "[]"))
 
@@ -50,10 +53,10 @@ def test_non_owner_rejected(conn, cfg, offer):
 
 
 def test_unknown_offer_handled(conn, cfg):
-    msg = ingest.handle(conn, cfg, title="fb:ghost:up", body="", author="harryrouas")
+    msg = ingest.handle(conn, cfg, title="fb:ghost:up", body="", author=OWNER)
     assert "inconnue" in msg
 
 
 def test_bad_title_handled(conn, cfg):
-    msg = ingest.handle(conn, cfg, title="hello world", body="", author="harryrouas")
+    msg = ingest.handle(conn, cfg, title="hello world", body="", author=OWNER)
     assert "non reconnu" in msg
