@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-03T21:37:23+00:00",
+ "generated_at": "2026-09-04T07:35:00+00:00",
  "github": {
   "owner": "b00833590",
   "repo": "veille-freelance",
@@ -7,11 +7,11 @@
  },
  "thresholds": {
   "priority1": 85,
-  "priority2": 70,
+  "priority2": 68,
   "category_min": 2.0,
   "llm": {
    "min_prescore": 45,
-   "max_per_run": 45,
+   "max_per_run": 20,
    "models": [
     "gemini-3.5-flash",
     "gemini-flash-lite-latest"
@@ -97,7 +97,7 @@
    "title": "CX Operations Manager, Tooling",
    "company": "Remote",
    "score": 68,
-   "priority": 3,
+   "priority": 2,
    "category": "A",
    "location": "Europe",
    "remote": "Remote",
@@ -4905,6 +4905,81 @@
      "points": 0,
      "max": 15,
      "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-03T09:37:47+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_21a350f69407ffc4042b",
+   "title": "Consult Partner, Industrial Retail & Utilities",
+   "company": "Kyndryl",
+   "score": 60,
+   "priority": 3,
+   "category": "B",
+   "location": "Flexible / Remote, Milan, Italy",
+   "remote": "Hybride",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://www.themuse.com/jobs/kyndryl/consult-partner-industrial-retail-utilities-787c46",
+   "published_at": "2026-04-27T18:42:27Z",
+   "why": [
+    "Compatible avec les études — temps de travail: unknown",
+    "Accessible sans profil technique — 0 signaux techniques, niveau LLM=light",
+    "IA appliquée + business — 1 termes IA, 3 termes business",
+    "Localisation / remote — hybrid"
+   ],
+   "match_notes": [],
+   "attention": [
+    "Exigence d'expérience significative (senior consulting leader, CXO-level)"
+   ],
+   "description": "Who We Are   At Kyndryl, we run and reimagine the mission-critical technology systems that drive advantage for the world's leading businesses.  We are at the heart of progress; with proven expertise and a continuous flow of AI-powered insight, enabling smarter decisions, faster innovation, and a lasting competitive edge. For our people-Kyndryls-that means doing purposeful work that powers human pr",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "themuse"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 6.1,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 18.1,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 12.4,
+     "max": 20.0,
+     "reason": "1 termes IA, 3 termes business"
+    },
+    "non_technical": {
+     "points": 13.5,
+     "max": 15.0,
+     "reason": "0 signaux techniques, niveau LLM=light"
+    },
+    "location": {
+     "points": 9.0,
+     "max": 10.0,
+     "reason": "hybrid"
+    },
+    "cv_potential": {
+     "points": 3.9,
+     "max": 5.0,
+     "reason": "1 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": -3,
+     "max": 15,
+     "reason": "Ce poste de Consult Partner chez Kyndryl est beaucoup trop senior pour un étudiant en M1, exigeant une expérience significative en leadership et gestion de relations CXO. Bien que le format freelance et la flexibilité soient idéaux, et que l'aspect stratégique lié à l'IA soit pertinent, le niveau d'expérience requis rend cette offre inadaptée au profil du candidat."
     }
    },
    "discovered_at": "2026-09-03T09:37:47+00:00",
@@ -11336,81 +11411,6 @@
    },
    "discovered_at": "2026-09-03T19:01:18+00:00",
    "is_paris": true
-  },
-  {
-   "id": "fp_21a350f69407ffc4042b",
-   "title": "Consult Partner, Industrial Retail & Utilities",
-   "company": "Kyndryl",
-   "score": 48,
-   "priority": 3,
-   "category": "B",
-   "location": "Flexible / Remote, Milan, Italy",
-   "remote": "Hybride",
-   "work_time": "Format à préciser",
-   "salary": "Rémunération non précisée",
-   "url": "https://www.themuse.com/jobs/kyndryl/consult-partner-industrial-retail-utilities-787c46",
-   "published_at": "2026-04-27T18:42:27Z",
-   "why": [
-    "Compatible avec les études — temps de travail: unknown",
-    "Accessible sans profil technique — 0 signaux techniques, niveau LLM=light",
-    "IA appliquée + business — 1 termes IA, 3 termes business",
-    "Localisation / remote — hybrid"
-   ],
-   "match_notes": [],
-   "attention": [
-    "Exigence d'expérience significative (senior consulting leader, CXO-level)"
-   ],
-   "description": "Who We Are   At Kyndryl, we run and reimagine the mission-critical technology systems that drive advantage for the world's leading businesses.  We are at the heart of progress; with proven expertise and a continuous flow of AI-powered insight, enabling smarter decisions, faster innovation, and a lasting competitive edge. For our people-Kyndryls-that means doing purposeful work that powers human pr",
-   "feedback": {
-    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:up&body=reason%3A%20%0Anote%3A%20",
-    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:star&body=reason%3A%20%0Anote%3A%20",
-    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:down&body=reason%3A%20%0Anote%3A%20",
-    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:exclude&body=reason%3A%20%0Anote%3A%20",
-    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_21a350f69407ffc4042b:applied&body=reason%3A%20%0Anote%3A%20"
-   },
-   "status": "new",
-   "sources": [
-    "themuse"
-   ],
-   "score_breakdown": {
-    "missions_fit": {
-     "points": 6.1,
-     "max": 25.0,
-     "reason": "catégorie B, correspondance missions"
-    },
-    "student_compat": {
-     "points": 18.1,
-     "max": 25.0,
-     "reason": "temps de travail: unknown"
-    },
-    "ai_business": {
-     "points": 12.4,
-     "max": 20.0,
-     "reason": "1 termes IA, 3 termes business"
-    },
-    "non_technical": {
-     "points": 13.5,
-     "max": 15.0,
-     "reason": "0 signaux techniques, niveau LLM=light"
-    },
-    "location": {
-     "points": 9.0,
-     "max": 10.0,
-     "reason": "hybrid"
-    },
-    "cv_potential": {
-     "points": 3.9,
-     "max": 5.0,
-     "reason": "1 signaux entreprise (startup/fintech/conseil)"
-    },
-    "_llm_adjustment": {
-     "points": -15,
-     "max": 15,
-     "reason": "Ce poste de Consult Partner chez Kyndryl est beaucoup trop senior pour un étudiant en M1, exigeant une expérience significative en leadership et gestion de relations CXO. Bien que le format freelance et la flexibilité soient idéaux, et que l'aspect stratégique lié à l'IA soit pertinent, le niveau d'expérience requis rend cette offre inadaptée au profil du candidat."
-    }
-   },
-   "discovered_at": "2026-09-03T09:37:47+00:00",
-   "is_paris": false
   },
   {
    "id": "fp_f406128a9a62700039aa",
@@ -64874,7 +64874,7 @@
  ],
  "stats": {
   "analysed": 843,
-  "retained": 1,
+  "retained": 2,
   "feedback_count": 0,
   "feedback_rate": 0.0,
   "applications": 0,
