@@ -127,7 +127,7 @@ sources:
   email_inbox:
     enabled: true
     imap_host: "imap.gmail.com"
-    label: "Veille"
+    label: "Veille freelance"
     max_messages: 60
 
 # -----------------------------------------------------------------------------
