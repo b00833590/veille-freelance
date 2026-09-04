@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-04T18:44:24+00:00",
+ "generated_at": "2026-09-04T21:12:25+00:00",
  "github": {
   "owner": "b00833590",
   "repo": "veille-freelance",
@@ -237,79 +237,6 @@
    },
    "discovered_at": "2026-09-03T13:53:38+00:00",
    "is_paris": true
-  },
-  {
-   "id": "fp_bc3f9a562201e6138325",
-   "title": "AI Trainer (Remote)",
-   "company": "Hired",
-   "score": 68,
-   "priority": 2,
-   "category": "C",
-   "location": "France",
-   "remote": "Remote",
-   "work_time": "Format à préciser",
-   "salary": "Rémunération non précisée",
-   "url": "https://fr.linkedin.com/jobs/view/ai-trainer-remote-at-hired-4463180738",
-   "published_at": "2026-09-04",
-   "why": [
-    "Missions alignées — catégorie C, correspondance missions",
-    "Accessible sans profil technique — 0 signaux techniques",
-    "Compatible avec les études — temps de travail: unknown",
-    "Localisation / remote — remote"
-   ],
-   "match_notes": [],
-   "attention": [],
-   "description": "",
-   "feedback": {
-    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:up&body=reason%3A%20%0Anote%3A%20",
-    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:star&body=reason%3A%20%0Anote%3A%20",
-    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:down&body=reason%3A%20%0Anote%3A%20",
-    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:exclude&body=reason%3A%20%0Anote%3A%20",
-    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:applied&body=reason%3A%20%0Anote%3A%20"
-   },
-   "status": "new",
-   "sources": [
-    "linkedin"
-   ],
-   "score_breakdown": {
-    "missions_fit": {
-     "points": 18.0,
-     "max": 25.0,
-     "reason": "catégorie C, correspondance missions"
-    },
-    "student_compat": {
-     "points": 13.8,
-     "max": 25.0,
-     "reason": "temps de travail: unknown"
-    },
-    "ai_business": {
-     "points": 8.4,
-     "max": 20.0,
-     "reason": "1 termes IA, 0 termes business"
-    },
-    "non_technical": {
-     "points": 15.0,
-     "max": 15.0,
-     "reason": "0 signaux techniques"
-    },
-    "location": {
-     "points": 10.0,
-     "max": 10.0,
-     "reason": "remote"
-    },
-    "cv_potential": {
-     "points": 2.5,
-     "max": 5.0,
-     "reason": "0 signaux entreprise (startup/fintech/conseil)"
-    },
-    "_llm_adjustment": {
-     "points": 0,
-     "max": 15,
-     "reason": "pas d'analyse LLM"
-    }
-   },
-   "discovered_at": "2026-09-04T18:44:06+00:00",
-   "is_paris": false
   },
   {
    "id": "fp_cbbb1b06044e75f6b1b5",
@@ -607,6 +534,152 @@
     }
    },
    "discovered_at": "2026-09-04T13:54:13+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_a207d56d4e1af57721a9",
+   "title": "CFO/COO",
+   "company": "Urban Linker",
+   "score": 66,
+   "priority": 3,
+   "category": "A",
+   "location": "Ville de Paris",
+   "remote": "Sur site",
+   "work_time": "Temps partiel",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/cfo-coo-at-urban-linker-4461972407",
+   "published_at": "2026-09-04",
+   "why": [
+    "Compatible avec les études — temps de travail: parttime",
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Missions alignées — catégorie A, correspondance missions",
+    "Localisation / remote — onsite · Paris/IdF"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": " L'entreprise Scale-up française en forte croissance, active dans la santé tech, une trentaine de personnes, des investisseurs au board, des opérations qui s'internationalisent. Le fondateur est brillant, exigeant, et il a besoin de quelqu'un qui tient le bateau quand lui regarde l'horizon. Pas d'ego, pas de bullshit une culture de la rigueur et de l'impact réel. Le rôle COO, un rôle de bras droit",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a207d56d4e1af57721a9:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a207d56d4e1af57721a9:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a207d56d4e1af57721a9:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a207d56d4e1af57721a9:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a207d56d4e1af57721a9:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 9.2,
+     "max": 25.0,
+     "reason": "catégorie A, correspondance missions"
+    },
+    "student_compat": {
+     "points": 23.8,
+     "max": 25.0,
+     "reason": "temps de travail: parttime"
+    },
+    "ai_business": {
+     "points": 4.4,
+     "max": 20.0,
+     "reason": "0 termes IA, 2 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 5.0,
+     "max": 5.0,
+     "reason": "2 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_cd0282d99e50955ff480",
+   "title": "Consultant IA & M365 Copilot H/F",
+   "company": "NEXTON",
+   "score": 66,
+   "priority": 3,
+   "category": "C",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/consultant-ia-m365-copilot-h-f-at-nexton-4461993283",
+   "published_at": "2026-09-04",
+   "why": [
+    "Missions alignées — catégorie C, correspondance missions",
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_cd0282d99e50955ff480:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_cd0282d99e50955ff480:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_cd0282d99e50955ff480:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_cd0282d99e50955ff480:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_cd0282d99e50955ff480:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 18.0,
+     "max": 25.0,
+     "reason": "catégorie C, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 8.4,
+     "max": 20.0,
+     "reason": "2 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:54+00:00",
    "is_paris": true
   },
   {
@@ -5063,6 +5136,225 @@
    "is_paris": true
   },
   {
+   "id": "fp_346c2bcb3bbb0b5c2936",
+   "title": "Sales Development Representative",
+   "company": "Audit revenue",
+   "score": 64,
+   "priority": 3,
+   "category": "B",
+   "location": "Ville de Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/sales-development-representative-at-audit-revenue-4461147282",
+   "published_at": "2026-09-04",
+   "why": [
+    "Missions alignées — catégorie B, correspondance missions",
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_346c2bcb3bbb0b5c2936:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_346c2bcb3bbb0b5c2936:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_346c2bcb3bbb0b5c2936:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_346c2bcb3bbb0b5c2936:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_346c2bcb3bbb0b5c2936:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 18.0,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 6.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_b1634fe8bf0a5e1a1ef8",
+   "title": "Business Development Representative (BDR)",
+   "company": "Zefir",
+   "score": 64,
+   "priority": 3,
+   "category": "B",
+   "location": "Ville de Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/business-development-representative-bdr-at-zefir-4463394189",
+   "published_at": "2026-09-04",
+   "why": [
+    "Missions alignées — catégorie B, correspondance missions",
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b1634fe8bf0a5e1a1ef8:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b1634fe8bf0a5e1a1ef8:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b1634fe8bf0a5e1a1ef8:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b1634fe8bf0a5e1a1ef8:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b1634fe8bf0a5e1a1ef8:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 18.0,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 6.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 1 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_920e1b5cfad6dbbdd028",
+   "title": "Business developer - Data B to B (H/F)",
+   "company": "UPTOO",
+   "score": 64,
+   "priority": 3,
+   "category": "B",
+   "location": "Nanterre",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/business-developer-data-b-to-b-h-f-at-uptoo-4435203835",
+   "published_at": "2026-09-04",
+   "why": [
+    "Missions alignées — catégorie B, correspondance missions",
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_920e1b5cfad6dbbdd028:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_920e1b5cfad6dbbdd028:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_920e1b5cfad6dbbdd028:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_920e1b5cfad6dbbdd028:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_920e1b5cfad6dbbdd028:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 18.0,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 6.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
    "id": "fp_2c2c20fbff64626d1902",
    "title": "Chef de projet IA - H/F",
    "company": "Talan",
@@ -6374,6 +6666,81 @@
     }
    },
    "discovered_at": "2026-09-03T09:37:47+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_bc3f9a562201e6138325",
+   "title": "AI Trainer (Remote)",
+   "company": "Hired",
+   "score": 61,
+   "priority": 3,
+   "category": "C",
+   "location": "France",
+   "remote": "Remote",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/ai-trainer-remote-at-hired-4463180738",
+   "published_at": "2026-09-04",
+   "why": [
+    "Compatible avec les études — temps de travail: unknown",
+    "Missions alignées — catégorie C, correspondance missions",
+    "Accessible sans profil technique — 0 signaux techniques, niveau LLM=light",
+    "Localisation / remote — remote"
+   ],
+   "match_notes": [],
+   "attention": [
+    "Description vide, risque de tâches de labellisation peu valorisantes ou nécessitant du code"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bc3f9a562201e6138325:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 14.0,
+     "max": 25.0,
+     "reason": "catégorie C, correspondance missions"
+    },
+    "student_compat": {
+     "points": 16.9,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 7.2,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 13.5,
+     "max": 15.0,
+     "reason": "0 signaux techniques, niveau LLM=light"
+    },
+    "location": {
+     "points": 10.0,
+     "max": 10.0,
+     "reason": "remote"
+    },
+    "cv_potential": {
+     "points": 2.0,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": -3,
+     "max": 15,
+     "reason": "Le titre d'AI Trainer en remote suggère une grande flexibilité horaire, idéale pour un étudiant. Cependant, en l'absence de description, ce type de poste s'apparente souvent à du micro-travail ou de l'évaluation de LLM, ce qui présente un intérêt professionnel très limité pour un étudiant en Master Grande École."
+    }
+   },
+   "discovered_at": "2026-09-04T18:44:06+00:00",
    "is_paris": false
   },
   {
@@ -10689,6 +11056,79 @@
    "is_paris": false
   },
   {
+   "id": "fp_aca74ec36e7c63dfc3d0",
+   "title": "Business Development Representative (F/H/X)",
+   "company": "Verisure",
+   "score": 60,
+   "priority": 3,
+   "category": "B",
+   "location": "Antony",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/business-development-representative-f-h-x-at-verisure-4461158556",
+   "published_at": "2026-09-04",
+   "why": [
+    "Missions alignées — catégorie B, correspondance missions",
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "IA appliquée + business — 0 termes IA, 1 termes business"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_aca74ec36e7c63dfc3d0:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_aca74ec36e7c63dfc3d0:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_aca74ec36e7c63dfc3d0:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_aca74ec36e7c63dfc3d0:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_aca74ec36e7c63dfc3d0:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 18.0,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 6.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 1 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
    "id": "fp_6ecfe84237a3ea8871c0",
    "title": "Sales Manager, Mid-Market, France (Remote)",
    "company": "Samsara Inc.",
@@ -12433,6 +12873,79 @@
      "points": 5.0,
      "max": 5.0,
      "reason": "2 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T13:54:13+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_f5bc816dc35325f79f2b",
+   "title": "Sales Planning & Strategy",
+   "company": "Alan",
+   "score": 52,
+   "priority": 3,
+   "category": "B",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/sales-planning-strategy-at-alan-4463335088",
+   "published_at": "2026-09-04",
+   "why": [
+    "Compatible avec les études — temps de travail: unknown",
+    "Accessible sans profil technique — 1 signaux techniques",
+    "Missions alignées — catégorie B, correspondance missions",
+    "Localisation / remote — onsite · Paris/IdF"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": " Health can’t wait . Not for symptoms to get worse. Not for a six‑month appointment. Not for a system to catch up. But that’s exactly how healthcare works today. You wait, until you can’t. Alan exists to end the wait. Health is a universal right, and we believe this right can only become real when it’s coupled with prevention. We need to stop treating health as something we repair and start treati",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 9.7,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 4.4,
+     "max": 20.0,
+     "reason": "0 termes IA, 2 termes business"
+    },
+    "non_technical": {
+     "points": 12.0,
+     "max": 15.0,
+     "reason": "1 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 3.8,
+     "max": 5.0,
+     "reason": "1 signaux entreprise (startup/fintech/conseil)"
     },
     "_llm_adjustment": {
      "points": 0,
@@ -24220,6 +24733,326 @@
    },
    "discovered_at": "2026-09-04T18:44:06+00:00",
    "is_paris": true
+  },
+  {
+   "id": "fp_c5c79b646b9151345a23",
+   "title": "Account Executive Off Trade (Formats & Execution)",
+   "company": "Suntory Global Spirits",
+   "score": 45,
+   "priority": 3,
+   "category": "B",
+   "location": "London, United Kingdom",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://www.themuse.com/jobs/suntoryglobalspirits/account-executive-off-trade-formats-execution-fb339b",
+   "published_at": "2026-09-04T20:21:00Z",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Missions alignées — catégorie B, correspondance missions",
+    "Localisation / remote — unknown"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 45 (poste sénior / non junior)"
+   ],
+   "description": "What makes this a great opportunity?    As Suntory Global Spirits accelerates its global footprint, we are establishing our own commercial business in the UK. As one of the largest, most sophisticated spirits markets in the world, the UK offers significant potential for our portfolio of premium brands. We're building a world-class team to create a new and exciting business that is rooted in strong",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c5c79b646b9151345a23:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c5c79b646b9151345a23:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c5c79b646b9151345a23:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c5c79b646b9151345a23:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c5c79b646b9151345a23:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "themuse"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 11.9,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 2.2,
+     "max": 20.0,
+     "reason": "0 termes IA, 1 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 45 (poste sénior / non junior)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:46+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_88823f9d9eb5e40c5432",
+   "title": "Enterprise Sales Engineer - Public Sector - East",
+   "company": "Samsara Inc.",
+   "score": 45,
+   "priority": 3,
+   "category": "B",
+   "location": "Flexible / Remote",
+   "remote": "Hybride",
+   "work_time": "Temps plein",
+   "salary": "Rémunération non précisée",
+   "url": "https://www.themuse.com/jobs/samsarainc/enterprise-sales-engineer-public-sector-east",
+   "published_at": "2026-08-25T19:39:59Z",
+   "why": [
+    "Compatible avec les études — temps de travail: fulltime (aménagement étudiant)",
+    "Missions alignées — catégorie B, correspondance missions",
+    "Localisation / remote — hybrid",
+    "IA appliquée + business — 1 termes IA, 2 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 45 (poste sénior / non junior)"
+   ],
+   "description": "Who we are   \n  Samsara (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Samsara, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global eco",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_88823f9d9eb5e40c5432:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_88823f9d9eb5e40c5432:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_88823f9d9eb5e40c5432:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_88823f9d9eb5e40c5432:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_88823f9d9eb5e40c5432:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "themuse"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 9.7,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: fulltime (aménagement étudiant)"
+    },
+    "ai_business": {
+     "points": 7.6,
+     "max": 20.0,
+     "reason": "1 termes IA, 2 termes business"
+    },
+    "non_technical": {
+     "points": 6.0,
+     "max": 15.0,
+     "reason": "3 signaux techniques"
+    },
+    "location": {
+     "points": 9.0,
+     "max": 10.0,
+     "reason": "hybrid"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 45 (poste sénior / non junior)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:46+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_75b8f013ab1e1ceb2004",
+   "title": "Account Executive (founding team)",
+   "company": "Raison",
+   "score": 45,
+   "priority": 3,
+   "category": "C",
+   "location": "Paris",
+   "remote": "Remote",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/account-executive-founding-team-at-raison-4461401147",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Missions alignées — catégorie C, correspondance missions",
+    "Localisation / remote — remote · Paris/IdF"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 45 (poste sénior / non junior)"
+   ],
+   "description": " Raison is on a mission to provide humans with better skills so they can feel confident and have more opportunities in the AI era. We help companies make sure 100% their teams master AI, directly in the flow of work (Teams, Slack) so that AI knowledge spreads across the organization instead of pooling in a handful of champions. We are passionate entrepreneurs believing that the ongoing AI revoluti",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_75b8f013ab1e1ceb2004:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_75b8f013ab1e1ceb2004:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_75b8f013ab1e1ceb2004:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_75b8f013ab1e1ceb2004:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_75b8f013ab1e1ceb2004:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 12.5,
+     "max": 25.0,
+     "reason": "catégorie C, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 9.8,
+     "max": 20.0,
+     "reason": "1 termes IA, 3 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 10.0,
+     "max": 10.0,
+     "reason": "remote · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 5.0,
+     "max": 5.0,
+     "reason": "2 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 45 (poste sénior / non junior)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_61276a053b049f016891",
+   "title": "CIO Office Stratégie & Transformation – Cheffe de Projet Senior",
+   "company": "Air France",
+   "score": 45,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Roissy-en-France",
+   "remote": "Remote",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/cio-office-strat%C3%A9gie-transformation-%E2%80%93-cheffe-de-projet-senior-at-air-france-4461988468",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — remote · Paris/IdF",
+    "IA appliquée + business — 0 termes IA, 2 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 45 (poste sénior / non junior)"
+   ],
+   "description": " Présentation du contexte Rejoignez Air France-KLM, un leader mondial de l'aviation, avec une organisation informatique comptant plus de 2000 collaborateurs répartis sur quatre sites : Amsterdam, Paris CDG, Toulouse, et Valbonne. Avec plus de 60 projets de transformation identifiés pour le premier trimestre 2025, nous recherchons un Chef de Projet Stratégie & Transformation pour accompagner ces ch",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_61276a053b049f016891:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_61276a053b049f016891:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_61276a053b049f016891:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_61276a053b049f016891:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_61276a053b049f016891:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 4.4,
+     "max": 20.0,
+     "reason": "0 termes IA, 2 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 10.0,
+     "max": 10.0,
+     "reason": "remote · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 45 (poste sénior / non junior)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": false
   },
   {
    "id": "fp_8b59cc7dc305fad9605b",
@@ -55755,86 +56588,6 @@
    "is_paris": true
   },
   {
-   "id": "fp_f5bc816dc35325f79f2b",
-   "title": "Sales Planning & Strategy",
-   "company": "Alan",
-   "score": 40,
-   "priority": 3,
-   "category": "UNKNOWN",
-   "location": "Paris",
-   "remote": "Sur site",
-   "work_time": "Format à préciser",
-   "salary": "Rémunération non précisée",
-   "url": "https://fr.linkedin.com/jobs/view/sales-planning-strategy-at-alan-4463335088",
-   "published_at": "2026-09-04",
-   "why": [
-    "Accessible sans profil technique — 0 signaux techniques",
-    "Compatible avec les études — temps de travail: unknown",
-    "Localisation / remote — onsite · Paris/IdF",
-    "Missions alignées — catégorie UNKNOWN, correspondance missions"
-   ],
-   "match_notes": [],
-   "attention": [
-    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
-   ],
-   "description": "",
-   "feedback": {
-    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:up&body=reason%3A%20%0Anote%3A%20",
-    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:star&body=reason%3A%20%0Anote%3A%20",
-    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:down&body=reason%3A%20%0Anote%3A%20",
-    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:exclude&body=reason%3A%20%0Anote%3A%20",
-    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f5bc816dc35325f79f2b:applied&body=reason%3A%20%0Anote%3A%20"
-   },
-   "status": "new",
-   "sources": [
-    "linkedin"
-   ],
-   "score_breakdown": {
-    "missions_fit": {
-     "points": 3.0,
-     "max": 25.0,
-     "reason": "catégorie UNKNOWN, correspondance missions"
-    },
-    "student_compat": {
-     "points": 13.8,
-     "max": 25.0,
-     "reason": "temps de travail: unknown"
-    },
-    "ai_business": {
-     "points": 0.0,
-     "max": 20.0,
-     "reason": "0 termes IA, 0 termes business"
-    },
-    "non_technical": {
-     "points": 15.0,
-     "max": 15.0,
-     "reason": "0 signaux techniques"
-    },
-    "location": {
-     "points": 8.5,
-     "max": 10.0,
-     "reason": "onsite · Paris/IdF"
-    },
-    "cv_potential": {
-     "points": 2.5,
-     "max": 5.0,
-     "reason": "0 signaux entreprise (startup/fintech/conseil)"
-    },
-    "_llm_adjustment": {
-     "points": 0,
-     "max": 15,
-     "reason": "pas d'analyse LLM"
-    },
-    "_hard_preferences": {
-     "points": 0,
-     "max": 0,
-     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
-    }
-   },
-   "discovered_at": "2026-09-04T13:54:13+00:00",
-   "is_paris": true
-  },
-  {
    "id": "fp_45041984616bcc4ac329",
    "title": "Responsable Pilotage Transformation HF",
    "company": "Diot-Siaci",
@@ -55857,7 +56610,7 @@
    "attention": [
     "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
    ],
-   "description": "",
+   "description": " Diot-Siaci est un leader européen du conseil et du courtage en assurance et réassurance en France comme à l’international, avec plus de 8500 collaborateurs et un chiffre d'affaires de plus d’un milliard d’euros (2025). Notre Groupe propose des solutions sur mesure pour ses clients en assurances de personnes, de biens, de responsabilités et de conseil RH. Notre Direction de la Transformation des O",
    "feedback": {
     "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_45041984616bcc4ac329:up&body=reason%3A%20%0Anote%3A%20",
     "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_45041984616bcc4ac329:star&body=reason%3A%20%0Anote%3A%20",
@@ -55881,9 +56634,9 @@
      "reason": "temps de travail: unknown"
     },
     "ai_business": {
-     "points": 0.0,
+     "points": 2.2,
      "max": 20.0,
-     "reason": "0 termes IA, 0 termes business"
+     "reason": "0 termes IA, 1 termes business"
     },
     "non_technical": {
      "points": 15.0,
@@ -60312,6 +61065,1286 @@
     }
    },
    "discovered_at": "2026-09-04T18:44:06+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_6316931cb70934e39285",
+   "title": "Associate Account Executive (Financial Services)",
+   "company": "AlphaSense",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Ireland",
+   "remote": "Lieu à préciser",
+   "work_time": "Full-Time",
+   "salary": "Rémunération non précisée",
+   "url": "https://jobicy.com/jobs/152555-associate-account-executive-financial-services",
+   "published_at": "2026-09-04T17:09:20+00:00",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: Full-Time",
+    "Localisation / remote — unknown",
+    "IA appliquée + business — 1 termes IA, 0 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "About AlphaSense: The world’s most sophisticated companies rely on AlphaSense to remove uncertainty from decision-making. With market intelligence and search built on proven AI, AlphaSense delivers insights that matter from content you can trust. Our universe of public and private content includes equity research, company filings, event transcripts, expert calls, news, trade journals, and clients’",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_6316931cb70934e39285:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_6316931cb70934e39285:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_6316931cb70934e39285:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_6316931cb70934e39285:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_6316931cb70934e39285:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "jobicy"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: Full-Time"
+    },
+    "ai_business": {
+     "points": 3.2,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:48+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_f737f0cb84e7abdc3ff0",
+   "title": "Chef de projet – Marché des Entreprises (F/H)",
+   "company": "Banque Populaire Val de France",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Montigny-le-Bretonneux",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-%E2%80%93-march%C3%A9-des-entreprises-f-h-at-banque-populaire-val-de-france-4461404032",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "Description de l'entreprise La Banque Populaire Val de France fait partie du Groupe BPCE, 2e groupe bancaire français. Banque Coopérative Régionale qui appartient à ses 185 000 sociétaires, la Banque Populaire Val de France s’engage pour la réussite économique et humaine de sa région en restant fidèle à ses engagements d’origine : stimuler toutes les initiatives et l’esprit d’entreprendre. 📍 La Ba",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f737f0cb84e7abdc3ff0:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f737f0cb84e7abdc3ff0:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f737f0cb84e7abdc3ff0:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f737f0cb84e7abdc3ff0:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f737f0cb84e7abdc3ff0:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_d33a6d22a449eb8bd9bb",
+   "title": "CFO - Directeur Administratif et Financier",
+   "company": "Ray studios",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/cfo-directeur-administratif-et-financier-at-ray-studios-4460487305",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_d33a6d22a449eb8bd9bb:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_d33a6d22a449eb8bd9bb:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_d33a6d22a449eb8bd9bb:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_d33a6d22a449eb8bd9bb:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_d33a6d22a449eb8bd9bb:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_c0b5d36b9a0b9d82049b",
+   "title": "Data Scientist - Machine Learning",
+   "company": "Sundayy",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/data-scientist-machine-learning-at-sundayy-4463331303",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c0b5d36b9a0b9d82049b:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c0b5d36b9a0b9d82049b:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c0b5d36b9a0b9d82049b:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c0b5d36b9a0b9d82049b:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c0b5d36b9a0b9d82049b:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "excluded",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_13b638b30c2f21e5c86b",
+   "title": "AI Product Owner Expérimenté H/F FY27",
+   "company": "EY",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/ai-product-owner-exp%C3%A9riment%C3%A9-h-f-fy27-at-ey-4433140330",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "IA appliquée + business — 1 termes IA, 0 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 45 (poste sénior / non junior); plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_13b638b30c2f21e5c86b:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_13b638b30c2f21e5c86b:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_13b638b30c2f21e5c86b:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_13b638b30c2f21e5c86b:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_13b638b30c2f21e5c86b:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 3.2,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 45 (poste sénior / non junior); plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_7bcbed60965637a11354",
+   "title": "Manager Data Science & Intelligence Artificielle (F/H/X)",
+   "company": "Epsilon France",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/manager-data-science-intelligence-artificielle-f-h-x-at-epsilon-france-4368003508",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "IA appliquée + business — 1 termes IA, 0 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7bcbed60965637a11354:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7bcbed60965637a11354:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7bcbed60965637a11354:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7bcbed60965637a11354:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7bcbed60965637a11354:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 3.2,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_7edbd461b9f6f717f9e4",
+   "title": "Consultant·e stratégique en Transformation GenAI",
+   "company": "WEnvision",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Neuilly-sur-Seine",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/consultant%C2%B7e-strat%C3%A9gique-en-transformation-genai-at-wenvision-4460953174",
+   "published_at": "2026-09-02",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7edbd461b9f6f717f9e4:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7edbd461b9f6f717f9e4:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7edbd461b9f6f717f9e4:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7edbd461b9f6f717f9e4:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_7edbd461b9f6f717f9e4:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_418527f59091107cabdd",
+   "title": "AI Product Manager - Paper.io 2",
+   "company": "Voodoo",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/ai-product-manager-paper-io-2-at-voodoo-4462899857",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "IA appliquée + business — 1 termes IA, 0 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_418527f59091107cabdd:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_418527f59091107cabdd:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_418527f59091107cabdd:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_418527f59091107cabdd:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_418527f59091107cabdd:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 3.2,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_4c1af897d0b7c5500773",
+   "title": "Product manager",
+   "company": "Bending Spoons",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/product-manager-at-bending-spoons-4461354416",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4c1af897d0b7c5500773:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4c1af897d0b7c5500773:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4c1af897d0b7c5500773:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4c1af897d0b7c5500773:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4c1af897d0b7c5500773:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_ebea61f10866247a309c",
+   "title": "Hardware & IT Operations Responsible",
+   "company": "Inbolt",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/hardware-it-operations-responsible-at-inbolt-4461146542",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_ebea61f10866247a309c:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_ebea61f10866247a309c:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_ebea61f10866247a309c:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_ebea61f10866247a309c:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_ebea61f10866247a309c:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_820c5c66933b80d09b8e",
+   "title": "Onboarding Specialist",
+   "company": "Alma",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/onboarding-specialist-at-alma-4421868533",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_820c5c66933b80d09b8e:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_820c5c66933b80d09b8e:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_820c5c66933b80d09b8e:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_820c5c66933b80d09b8e:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_820c5c66933b80d09b8e:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_fda083b0c317f5bcc759",
+   "title": "Product Manager – Business Applications",
+   "company": "Dataiku",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Ville de Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/product-manager-%E2%80%93-business-applications-at-dataiku-4441530410",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fda083b0c317f5bcc759:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fda083b0c317f5bcc759:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fda083b0c317f5bcc759:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fda083b0c317f5bcc759:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fda083b0c317f5bcc759:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_16ee65039046204bed66",
+   "title": "Ingénieur commercial - F/H/NB",
+   "company": "Cegid",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Boulogne-Billancourt",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-commercial-f-h-nb-at-cegid-4462882831",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_16ee65039046204bed66:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_16ee65039046204bed66:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_16ee65039046204bed66:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_16ee65039046204bed66:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_16ee65039046204bed66:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_de206810358be35a88c5",
+   "title": "Responsable d'Affaires - Développement commercial Propreté Nettoyage f/h",
+   "company": "ISOR",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Levallois-Perret",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/responsable-d-affaires-d%C3%A9veloppement-commercial-propret%C3%A9-nettoyage-f-h-at-isor-4459965038",
+   "published_at": "2026-09-02",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_de206810358be35a88c5:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_de206810358be35a88c5:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_de206810358be35a88c5:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_de206810358be35a88c5:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_de206810358be35a88c5:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_bea328c956fd8319d42d",
+   "title": "AI Instructional Designer (Forward-Deployed, founding team)",
+   "company": "Raison",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/ai-instructional-designer-forward-deployed-founding-team-at-raison-4461402240",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "IA appliquée + business — 1 termes IA, 0 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bea328c956fd8319d42d:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bea328c956fd8319d42d:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bea328c956fd8319d42d:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bea328c956fd8319d42d:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_bea328c956fd8319d42d:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 3.2,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:54+00:00",
+   "is_paris": true
+  },
+  {
+   "id": "fp_fedc7427e7d2cba3e8ab",
+   "title": "Confirmed Machine Learning Engineer (Productivity)",
+   "company": "Doctrine",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/confirmed-machine-learning-engineer-productivity-at-doctrine-4463621118",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fedc7427e7d2cba3e8ab:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fedc7427e7d2cba3e8ab:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fedc7427e7d2cba3e8ab:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fedc7427e7d2cba3e8ab:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fedc7427e7d2cba3e8ab:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "excluded",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:54+00:00",
    "is_paris": true
   },
   {
@@ -75867,6 +77900,736 @@
    "is_paris": false
   },
   {
+   "id": "fp_783af584c86e0bab69b5",
+   "title": "Directeur(trice) de Participations",
+   "company": "Sodero",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Nantes",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/directeur-trice-de-participations-at-sodero-4462808429",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_783af584c86e0bab69b5:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_783af584c86e0bab69b5:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_783af584c86e0bab69b5:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_783af584c86e0bab69b5:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_783af584c86e0bab69b5:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_3a71990a29654ba54bff",
+   "title": "Directeur/trice",
+   "company": "CENTRE SOCIO CULTUREL DES HAUTS DU LYONNAIS",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Sarre-Union",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/directeur-trice-at-centre-socio-culturel-des-hauts-du-lyonnais-4462881030",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_3a71990a29654ba54bff:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_3a71990a29654ba54bff:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_3a71990a29654ba54bff:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_3a71990a29654ba54bff:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_3a71990a29654ba54bff:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_07879385afc153bcb98e",
+   "title": "DIRECTEUR.RICE H/F",
+   "company": "GROUPE SOS",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Biscarrosse",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/directeur-rice-h-f-at-groupe-sos-4462857962",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_07879385afc153bcb98e:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_07879385afc153bcb98e:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_07879385afc153bcb98e:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_07879385afc153bcb98e:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_07879385afc153bcb98e:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_5203705ee191c7e451f2",
+   "title": "Directeur des services de gestion (F/H)",
+   "company": "Unofi",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Brive-la-Gaillarde",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/directeur-des-services-de-gestion-f-h-at-unofi-4437769077",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_5203705ee191c7e451f2:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_5203705ee191c7e451f2:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_5203705ee191c7e451f2:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_5203705ee191c7e451f2:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_5203705ee191c7e451f2:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_386e2c2a1acc8f0e706e",
+   "title": "Responsable Régional Formalités",
+   "company": "Chambre de Métiers et de l'Artisanat de Bretagne",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Rennes",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/responsable-r%C3%A9gional-formalit%C3%A9s-at-chambre-de-m%C3%A9tiers-et-de-l-artisanat-de-bretagne-4462785365",
+   "published_at": "2026-09-03",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_386e2c2a1acc8f0e706e:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_386e2c2a1acc8f0e706e:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_386e2c2a1acc8f0e706e:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_386e2c2a1acc8f0e706e:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_386e2c2a1acc8f0e706e:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:52+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_4360ecc5ae69bdb99376",
+   "title": "Product Builder",
+   "company": "Vasco",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Bordeaux",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/product-builder-at-vasco-4461973425",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4360ecc5ae69bdb99376:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4360ecc5ae69bdb99376:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4360ecc5ae69bdb99376:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4360ecc5ae69bdb99376:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_4360ecc5ae69bdb99376:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_0b3e90a56a91fec31e04",
+   "title": "Sales Developer",
+   "company": "Sogeti",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Nantes",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/sales-developer-at-sogeti-4427571397",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0b3e90a56a91fec31e04:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0b3e90a56a91fec31e04:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0b3e90a56a91fec31e04:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0b3e90a56a91fec31e04:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0b3e90a56a91fec31e04:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_712b8f55f8f21ebcac4a",
+   "title": "Responsable Marketing de l'offre et expertise métiers H/F",
+   "company": "O2 - N°1 du service à la personne",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Le Mans",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/responsable-marketing-de-l-offre-et-expertise-m%C3%A9tiers-h-f-at-o2-n%C2%B01-du-service-%C3%A0-la-personne-4463375620",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_712b8f55f8f21ebcac4a:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_712b8f55f8f21ebcac4a:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_712b8f55f8f21ebcac4a:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_712b8f55f8f21ebcac4a:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_712b8f55f8f21ebcac4a:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_41061af7e380f9dc4a75",
+   "title": "CDI - Country Manager IBERIA F/H",
+   "company": "JJA",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Gonesse",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/cdi-country-manager-iberia-f-h-at-jja-sa-4461969281",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_41061af7e380f9dc4a75:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_41061af7e380f9dc4a75:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_41061af7e380f9dc4a75:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_41061af7e380f9dc4a75:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_41061af7e380f9dc4a75:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_0bdb4d486e79895e1280",
+   "title": "Consultant(e) Dataiku F/H",
+   "company": "CGI",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Toulouse et périphérie",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/consultant-e-dataiku-f-h-at-cgi-4366614318",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0bdb4d486e79895e1280:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0bdb4d486e79895e1280:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0bdb4d486e79895e1280:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0bdb4d486e79895e1280:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0bdb4d486e79895e1280:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:54+00:00",
+   "is_paris": false
+  },
+  {
    "id": "fp_5009626305c87ce99fec",
    "title": "Principal, Global Operations Products & Service Delivery",
    "company": "Equinix, Inc",
@@ -78969,6 +81732,86 @@
    "is_paris": false
   },
   {
+   "id": "fp_f2f14d36ed8438a6c803",
+   "title": "Enterprise Account Executive",
+   "company": "Zoom",
+   "score": 38,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Flexible / Remote, Mumbai, India",
+   "remote": "Hybride",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://www.themuse.com/jobs/zoom/enterprise-account-executive-01e006",
+   "published_at": "2026-09-04T20:07:16Z",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — hybrid",
+    "IA appliquée + business — 1 termes IA, 1 termes business"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 45 (poste sénior / non junior); plafonné à 38 (hors Paris / France / remote Europe)"
+   ],
+   "description": "What you can Expect  Zoom seeks an Enterprise Account Executive based in India. In this role, you will own and drive net-new enterprise logo acquisition across India's largest organisations - including major conglomerates. You will be selling Zoom's AI-powered communication and collaboration platform, spanning video meetings, phone, chat, whiteboard, customer experience, employee experience and mo",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f2f14d36ed8438a6c803:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f2f14d36ed8438a6c803:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f2f14d36ed8438a6c803:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f2f14d36ed8438a6c803:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_f2f14d36ed8438a6c803:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "themuse"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 5.4,
+     "max": 20.0,
+     "reason": "1 termes IA, 1 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 9.0,
+     "max": 10.0,
+     "reason": "hybrid"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 45 (poste sénior / non junior); plafonné à 38 (hors Paris / France / remote Europe)"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:46+00:00",
+   "is_paris": false
+  },
+  {
    "id": "fp_7c96e720e82f57b187a7",
    "title": "Agency Operations Project Intern (Greek Speaker) (TikTok LIVE) - 2026 Start (BS/MS)",
    "company": "TikTok",
@@ -79941,6 +82784,79 @@
    "is_paris": true
   },
   {
+   "id": "fp_b33d54e1564a1ec3dca9",
+   "title": "Spontaneous Application (Full time contracts)",
+   "company": "Scaleway",
+   "score": 33,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Temps plein",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/spontaneous-application-full-time-contracts-at-scaleway-4461144300",
+   "published_at": "2026-09-04",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Compatible avec les études — temps de travail: fulltime",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b33d54e1564a1ec3dca9:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b33d54e1564a1ec3dca9:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b33d54e1564a1ec3dca9:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b33d54e1564a1ec3dca9:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_b33d54e1564a1ec3dca9:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 3.8,
+     "max": 25.0,
+     "reason": "temps de travail: fulltime"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:53+00:00",
+   "is_paris": true
+  },
+  {
    "id": "fp_bde8ba0fd49147de7b33",
    "title": "Emerging Markets Credit Sales - Analyst",
    "company": "JPMorgan Chase",
@@ -80237,6 +83153,79 @@
     }
    },
    "discovered_at": "2026-09-04T09:14:04+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_c972987bdca3a63126fb",
+   "title": "Senior Product Solutions Manager: Data & Insights",
+   "company": "Aristocrat",
+   "score": 32,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "London, United Kingdom",
+   "remote": "Lieu à préciser",
+   "work_time": "Temps plein",
+   "salary": "Rémunération non précisée",
+   "url": "https://www.themuse.com/jobs/aristocrat/senior-product-solutions-manager-data-insights",
+   "published_at": "2026-09-04T20:14:59Z",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Localisation / remote — unknown",
+    "Compatible avec les études — temps de travail: fulltime",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "Aristocrat Interactive is at the forefront of platform innovation, leading the delivery of world-class data solutions in the regulated iGaming market. We are dedicated to crafting a suite of data-driven products that help operators gain actionable insights, engage players more effectively, and reach outstanding commercial success. As a Senior Product Solutions Manager: Data &amp; Insights, you wil",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c972987bdca3a63126fb:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c972987bdca3a63126fb:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c972987bdca3a63126fb:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c972987bdca3a63126fb:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_c972987bdca3a63126fb:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "themuse"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 3.8,
+     "max": 25.0,
+     "reason": "temps de travail: fulltime"
+    },
+    "ai_business": {
+     "points": 2.2,
+     "max": 20.0,
+     "reason": "0 termes IA, 1 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-04T21:11:45+00:00",
    "is_paris": false
   },
   {
@@ -81232,8 +84221,8 @@
   }
  ],
  "stats": {
-  "analysed": 1056,
-  "retained": 4,
+  "analysed": 1095,
+  "retained": 3,
   "feedback_count": 0,
   "feedback_rate": 0.0,
   "applications": 0,
@@ -81257,17 +84246,17 @@
    }
   ],
   "last_run": {
-   "id": 10,
-   "started_at": "2026-09-04T18:41:18+00:00",
-   "finished_at": "2026-09-04T18:44:24+00:00",
+   "id": 11,
+   "started_at": "2026-09-04T21:08:56+00:00",
+   "finished_at": "2026-09-04T21:12:25+00:00",
    "sources_ok": "[\"france_travail\", \"adzuna\", \"themuse\", \"remotive\", \"jobicy\", \"hn_whoishiring\", \"wttj\", \"linkedin\", \"email_inbox\"]",
    "sources_failed": "[]",
-   "n_raw": 609,
-   "n_new": 68,
-   "n_scored": 980,
+   "n_raw": 605,
+   "n_new": 39,
+   "n_scored": 1017,
    "n_llm": 1,
    "n_priority1": 0,
-   "n_priority2": 4,
+   "n_priority2": 3,
    "notes": "archivées: 0"
   }
  }
