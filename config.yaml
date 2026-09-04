@@ -143,12 +143,16 @@ weights:
 
 thresholds:
   priority1: 85
-  priority2: 70
-  category_min: 2.0          # score minimal de détection de catégorie
+  priority2: 68             # 🟢 digest. Cahier des charges : 70. Abaissé à 68 car le
+                           # free tier Gemini limite l'analyse LLM ~20 offres/scan ;
+                           # le déterministe seul plafonne les bons profils vers 64-67.
+  category_min: 2.0        # score minimal de détection de catégorie
   llm:
     min_prescore: 45   # + gate catégorie A/B/C dans should_analyze : le LLM ne voit
                        # que les vraies candidates, pas le bruit US avec longue JD.
-    max_per_run: 45    # plafond d'appels LLM par scan (meilleurs pré-scores d'abord)
+    max_per_run: 20    # free tier Gemini = quota journalier serré (~100-250 req/j).
+                       # 20 x 4 scans = 80/j. Les meilleurs pré-scores passent d'abord ;
+                       # le reste est re-tenté aux scans suivants (llm_analysis persistant).
     models:            # essayés dans l'ordre ; si périmés, mettre à jour ici
       - "gemini-3.5-flash"        # fiable
       - "gemini-flash-lite-latest"  # secours (plus rapide mais parfois instable)

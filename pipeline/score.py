@@ -227,6 +227,10 @@ def final_score(offer: dict, cfg: dict, weights: dict,
     adj = 0
     if llm and llm.get("score_adjustment") is not None:
         adj = max(-_LLM_ADJ_CAP, min(_LLM_ADJ_CAP, int(llm["score_adjustment"])))
+        # Une pénalité LLM sans red flag concret est du bruit : on la plafonne.
+        # Le LLM sert à confirmer/booster ou à opposer un veto motivé, pas à pinailler.
+        if adj < 0 and len(llm.get("red_flags") or []) < 2:
+            adj = max(adj, -3)
         score += adj
 
     score = max(0, min(100, score))
