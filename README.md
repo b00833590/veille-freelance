@@ -104,6 +104,15 @@ git push -u origin build/veille-system      # ou merge sur main d'abord
 | `GMAIL_USER` | ton adresse Gmail | — |
 | `GMAIL_APP_PASSWORD` | https://myaccount.google.com/apppasswords (2FA requise) | 2 min |
 
+> **Quota Gemini — important.** Une clé AI Studio « simple » a un quota journalier
+> très bas (~25-50 requêtes/jour sur `gemini-3.5-flash`). Le système le gère (disjoncteur
+> → scoring déterministe), mais il n'analyse alors que ~15-20 offres/jour.
+> **Pour lever la limite (gratuitement) :** dans Google AI Studio, crée la clé dans un
+> **projet Google Cloud avec la facturation activée** (Console GCP → Billing → lier une
+> carte). Le *free tier* Gemini reste gratuit (≈1500 req/jour sur flash-lite), aucun débit
+> tant qu'on reste dans ces limites — c'est juste la condition pour débloquer le quota.
+> Puis remplace le secret `GEMINI_API_KEY` par la nouvelle clé.
+
 ### c. Déclarer les secrets
 
 Dépôt GitHub → **Settings → Secrets and variables → Actions → New repository secret**.
