@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19T18:19:56+00:00",
+ "generated_at": "2026-09-19T21:15:10+00:00",
  "github": {
   "owner": "b00833590",
   "repo": "veille-freelance",
@@ -11533,6 +11533,79 @@
    "is_paris": false
   },
   {
+   "id": "fp_adef28b087bf5bd41a45",
+   "title": "Consultant IA / Knowledge Management",
+   "company": "Synapsys",
+   "score": 63,
+   "priority": 3,
+   "category": "C",
+   "location": "Lyon et périphérie",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/consultant-ia-knowledge-management-at-synapsys-4467874750",
+   "published_at": "2026-09-18",
+   "why": [
+    "Missions alignées — catégorie C, correspondance missions",
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "IA appliquée + business — 1 termes IA, 0 termes business"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_adef28b087bf5bd41a45:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_adef28b087bf5bd41a45:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_adef28b087bf5bd41a45:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_adef28b087bf5bd41a45:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_adef28b087bf5bd41a45:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 18.0,
+     "max": 25.0,
+     "reason": "catégorie C, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 8.4,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:32+00:00",
+   "is_paris": false
+  },
+  {
    "id": "fp_08eeae7d17ca4e296263",
    "title": "Business Development Representative",
    "company": "Kinsta",
@@ -12781,6 +12854,79 @@
    },
    "discovered_at": "2026-09-18T14:00:37+00:00",
    "is_paris": true
+  },
+  {
+   "id": "fp_e637693766af39678ab8",
+   "title": "Win Coach Content & Enablement Coordinator",
+   "company": "Kyndryl",
+   "score": 62,
+   "priority": 3,
+   "category": "B",
+   "location": "Alajuela, Costa Rica, Flexible / Remote",
+   "remote": "Hybride",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://www.themuse.com/jobs/kyndryl/win-coach-content-enablement-coordinator",
+   "published_at": "2026-09-18T18:37:26Z",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Missions alignées — catégorie B, correspondance missions",
+    "IA appliquée + business — 1 termes IA, 3 termes business"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "Who We Are   At Kyndryl, we run and reimagine the mission-critical technology systems that drive advantage for the world's leading businesses.  We are at the heart of progress; with proven expertise and a continuous flow of AI-powered insight, enabling smarter decisions, faster innovation, and a lasting competitive edge. For our people-Kyndryls-that means doing purposeful work that powers human pr",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e637693766af39678ab8:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e637693766af39678ab8:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e637693766af39678ab8:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e637693766af39678ab8:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e637693766af39678ab8:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "themuse"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 11.9,
+     "max": 25.0,
+     "reason": "catégorie B, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 9.8,
+     "max": 20.0,
+     "reason": "1 termes IA, 3 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 9.0,
+     "max": 10.0,
+     "reason": "hybrid"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:22+00:00",
+   "is_paris": false
   },
   {
    "id": "fp_cc10030dd17771b827fc",
@@ -34138,6 +34284,79 @@
    },
    "discovered_at": "2026-09-18T09:20:13+00:00",
    "is_paris": true
+  },
+  {
+   "id": "fp_a4ff23da82164f2cbfaa",
+   "title": "Product Owner H/F",
+   "company": "HopLunch",
+   "score": 54,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Strasbourg",
+   "remote": "Remote",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/product-owner-h-f-at-hoplunch-4466997079",
+   "published_at": "2026-09-19",
+   "why": [
+    "Compatible avec les études — temps de travail: unknown",
+    "Accessible sans profil technique — 1 signaux techniques",
+    "IA appliquée + business — 3 termes IA, 1 termes business",
+    "Localisation / remote — remote"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": " Qui sommes nous ? Chez HopLunch, nous proposons tous les midis une sélection de plats cuisinés avec amour par nos restaurateurs partenaires, le tout livré directement au bureau par notre équipe de supers livreurs. La recette parfaite pour une pause conviviale entre collègues ! Parce qu’un bon repas, c’est bien plus qu’une simple pause : c’est un moment de partage. Après avoir régalé les quatre co",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a4ff23da82164f2cbfaa:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a4ff23da82164f2cbfaa:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a4ff23da82164f2cbfaa:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a4ff23da82164f2cbfaa:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_a4ff23da82164f2cbfaa:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 11.8,
+     "max": 20.0,
+     "reason": "3 termes IA, 1 termes business"
+    },
+    "non_technical": {
+     "points": 12.0,
+     "max": 15.0,
+     "reason": "1 signaux techniques"
+    },
+    "location": {
+     "points": 10.0,
+     "max": 10.0,
+     "reason": "remote"
+    },
+    "cv_potential": {
+     "points": 3.8,
+     "max": 5.0,
+     "reason": "1 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:30+00:00",
+   "is_paris": false
   },
   {
    "id": "fp_d94e1b89c4b06aa9bab7",
@@ -59436,8 +59655,8 @@
    "why": [
     "Accessible sans profil technique — 0 signaux techniques, niveau LLM=none",
     "Localisation / remote — remote",
-    "Missions alignées — catégorie B, correspondance missions",
-    "Compatible avec les études — temps de travail: unknown"
+    "IA appliquée + business — 2 termes IA, 4 termes business",
+    "Missions alignées — catégorie B, correspondance missions"
    ],
    "match_notes": [],
    "attention": [
@@ -59470,9 +59689,9 @@
      "reason": "temps de travail: unknown"
     },
     "ai_business": {
-     "points": 6.0,
+     "points": 7.6,
      "max": 20.0,
-     "reason": "1 termes IA, 4 termes business"
+     "reason": "2 termes IA, 4 termes business"
     },
     "non_technical": {
      "points": 15.0,
@@ -71613,86 +71832,6 @@
    "is_paris": true
   },
   {
-   "id": "fp_e5c44280633639edf22a",
-   "title": "Head of AI Enablement",
-   "company": "Supply chain  Simplified",
-   "score": 45,
-   "priority": 3,
-   "category": "C",
-   "location": "Paris",
-   "remote": "Sur site",
-   "work_time": "Format à préciser",
-   "salary": "Rémunération non précisée",
-   "url": "https://fr.linkedin.com/jobs/view/head-of-ai-enablement-at-supply-chain-simplified-4469521621",
-   "published_at": "2026-09-19",
-   "why": [
-    "Missions alignées — catégorie C, correspondance missions",
-    "Accessible sans profil technique — 0 signaux techniques",
-    "Compatible avec les études — temps de travail: unknown",
-    "Localisation / remote — onsite · Paris/IdF"
-   ],
-   "match_notes": [],
-   "attention": [
-    "plafonné à 45 (poste sénior / non junior)"
-   ],
-   "description": "",
-   "feedback": {
-    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:up&body=reason%3A%20%0Anote%3A%20",
-    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:star&body=reason%3A%20%0Anote%3A%20",
-    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:down&body=reason%3A%20%0Anote%3A%20",
-    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:exclude&body=reason%3A%20%0Anote%3A%20",
-    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:applied&body=reason%3A%20%0Anote%3A%20"
-   },
-   "status": "new",
-   "sources": [
-    "linkedin"
-   ],
-   "score_breakdown": {
-    "missions_fit": {
-     "points": 18.0,
-     "max": 25.0,
-     "reason": "catégorie C, correspondance missions"
-    },
-    "student_compat": {
-     "points": 13.8,
-     "max": 25.0,
-     "reason": "temps de travail: unknown"
-    },
-    "ai_business": {
-     "points": 8.4,
-     "max": 20.0,
-     "reason": "1 termes IA, 0 termes business"
-    },
-    "non_technical": {
-     "points": 15.0,
-     "max": 15.0,
-     "reason": "0 signaux techniques"
-    },
-    "location": {
-     "points": 8.5,
-     "max": 10.0,
-     "reason": "onsite · Paris/IdF"
-    },
-    "cv_potential": {
-     "points": 2.5,
-     "max": 5.0,
-     "reason": "0 signaux entreprise (startup/fintech/conseil)"
-    },
-    "_llm_adjustment": {
-     "points": 0,
-     "max": 15,
-     "reason": "pas d'analyse LLM"
-    },
-    "_hard_preferences": {
-     "points": 0,
-     "max": 0,
-     "reason": "plafonné à 45 (poste sénior / non junior)"
-    }
-   },
-   "discovered_at": "2026-09-19T13:36:43+00:00",
-   "is_paris": true
-  },
-  {
    "id": "fp_3935b2d5342feb20cc50",
    "title": "Senior/Managing/Director en Stratégie SI et Architecture IA et Data",
    "company": "Capgemini Invent",
@@ -72170,6 +72309,86 @@
     }
    },
    "discovered_at": "2026-09-19T18:19:29+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_0453bb7dedb6ebd573f0",
+   "title": "Senior Product Manager: Content Distribution",
+   "company": "Aristocrat",
+   "score": 45,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "London, United Kingdom",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://www.themuse.com/jobs/aristocrat/senior-product-manager-content-distribution",
+   "published_at": "2026-09-19T21:05:43Z",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "IA appliquée + business — 1 termes IA, 2 termes business",
+    "Localisation / remote — unknown"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 45 (poste sénior / non junior)"
+   ],
+   "description": "Aristocrat Interactive stands at the forefront of product evolution and platform innovation, leading the way in regulated iGaming markets. We are investing in a connected suite of products developed to help operators distribute content more effectively, engage players intelligently, and achieve stronger commercial outcomes. As a Senior Product Solutions Manager for Content Distribution, you'll be ",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0453bb7dedb6ebd573f0:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0453bb7dedb6ebd573f0:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0453bb7dedb6ebd573f0:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0453bb7dedb6ebd573f0:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_0453bb7dedb6ebd573f0:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "themuse"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 7.6,
+     "max": 20.0,
+     "reason": "1 termes IA, 2 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 45 (poste sénior / non junior)"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:22+00:00",
    "is_paris": false
   },
   {
@@ -75308,6 +75527,82 @@
    },
    "discovered_at": "2026-09-17T09:46:37+00:00",
    "is_paris": false
+  },
+  {
+   "id": "fp_e5c44280633639edf22a",
+   "title": "Head of AI Enablement",
+   "company": "Supply chain  Simplified",
+   "score": 41,
+   "priority": 3,
+   "category": "C",
+   "location": "Paris",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/head-of-ai-enablement-at-supply-chain-simplified-4469521621",
+   "published_at": "2026-09-19",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques, niveau LLM=light",
+    "IA appliquée + business — 1 termes IA, 0 termes business",
+    "Missions alignées — catégorie C, correspondance missions",
+    "Compatible avec les études — temps de travail: unknown"
+   ],
+   "match_notes": [],
+   "attention": [
+    "Poste senior (Head of)",
+    "Description vide"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e5c44280633639edf22a:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 10.9,
+     "max": 25.0,
+     "reason": "catégorie C, correspondance missions"
+    },
+    "student_compat": {
+     "points": 9.4,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 12.7,
+     "max": 20.0,
+     "reason": "1 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 13.5,
+     "max": 15.0,
+     "reason": "0 signaux techniques, niveau LLM=light"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 1.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": -15,
+     "max": 15,
+     "reason": "Le titre 'Head of' indique un poste de niveau senior hautement stratégique, incompatible avec un profil d'étudiant en M1. Bien que le domaine de l'AI Enablement soit très pertinent, la séniorité requise et l'absence d'informations sur le contrat rendent cette offre inadéquate."
+    }
+   },
+   "discovered_at": "2026-09-19T13:36:43+00:00",
+   "is_paris": true
   },
   {
    "id": "fp_6d377fa4a451989e41ab",
@@ -205190,6 +205485,86 @@
    "is_paris": false
   },
   {
+   "id": "fp_fa44b97e8eeb274a45e8",
+   "title": "Senior Digital Advisor Microsoft H/F",
+   "company": "Expertime",
+   "score": 40,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Nanterre",
+   "remote": "Sur site",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/senior-digital-advisor-microsoft-h-f-at-expertime-4404563388",
+   "published_at": "2026-09-18",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — onsite · Paris/IdF",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [
+    "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+   ],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fa44b97e8eeb274a45e8:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fa44b97e8eeb274a45e8:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fa44b97e8eeb274a45e8:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fa44b97e8eeb274a45e8:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_fa44b97e8eeb274a45e8:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 8.5,
+     "max": 10.0,
+     "reason": "onsite · Paris/IdF"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    },
+    "_hard_preferences": {
+     "points": 0,
+     "max": 0,
+     "reason": "plafonné à 40 (hors catégories cibles, pas de dimension IA/business)"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:32+00:00",
+   "is_paris": false
+  },
+  {
    "id": "fp_235ec3c2b0ccf4d904cb",
    "title": "Expert, Global Operations Products & Service Delivery",
    "company": "Equinix, Inc",
@@ -285950,6 +286325,225 @@
    "is_paris": false
   },
   {
+   "id": "fp_e7636b25a66f23df6ecd",
+   "title": "Chef de projet FTTH (H/F)",
+   "company": "fortil",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Bordeaux",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-ftth-h-f-at-fortil-4468824671",
+   "published_at": "2026-09-17",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e7636b25a66f23df6ecd:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e7636b25a66f23df6ecd:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e7636b25a66f23df6ecd:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e7636b25a66f23df6ecd:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_e7636b25a66f23df6ecd:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:30+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_342d0070715d90e9fd5c",
+   "title": "Assistant administratif bureau/Assistante administrative bureau",
+   "company": "Groupe Orqual",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Strasbourg et périphérie",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/assistant-administratif-bureau-assistante-administrative-bureau-at-groupe-orqual-4468621576",
+   "published_at": "2026-09-17",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_342d0070715d90e9fd5c:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_342d0070715d90e9fd5c:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_342d0070715d90e9fd5c:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_342d0070715d90e9fd5c:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_342d0070715d90e9fd5c:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:31+00:00",
+   "is_paris": false
+  },
+  {
+   "id": "fp_548b30ed1083d69050f4",
+   "title": "Ingénieur commercial / Ingénieure commerciale",
+   "company": "SOLUTEC",
+   "score": 39,
+   "priority": 3,
+   "category": "UNKNOWN",
+   "location": "Lyon",
+   "remote": "Lieu à préciser",
+   "work_time": "Format à préciser",
+   "salary": "Rémunération non précisée",
+   "url": "https://fr.linkedin.com/jobs/view/ing%C3%A9nieur-commercial-ing%C3%A9nieure-commerciale-at-solutec-4468655869",
+   "published_at": "2026-09-17",
+   "why": [
+    "Accessible sans profil technique — 0 signaux techniques",
+    "Compatible avec les études — temps de travail: unknown",
+    "Localisation / remote — unknown",
+    "Missions alignées — catégorie UNKNOWN, correspondance missions"
+   ],
+   "match_notes": [],
+   "attention": [],
+   "description": "",
+   "feedback": {
+    "up": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_548b30ed1083d69050f4:up&body=reason%3A%20%0Anote%3A%20",
+    "star": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_548b30ed1083d69050f4:star&body=reason%3A%20%0Anote%3A%20",
+    "down": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_548b30ed1083d69050f4:down&body=reason%3A%20%0Anote%3A%20",
+    "exclude": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_548b30ed1083d69050f4:exclude&body=reason%3A%20%0Anote%3A%20",
+    "applied": "https://github.com/b00833590/veille-freelance/issues/new?labels=feedback&title=fb:fp_548b30ed1083d69050f4:applied&body=reason%3A%20%0Anote%3A%20"
+   },
+   "status": "new",
+   "sources": [
+    "linkedin"
+   ],
+   "score_breakdown": {
+    "missions_fit": {
+     "points": 3.0,
+     "max": 25.0,
+     "reason": "catégorie UNKNOWN, correspondance missions"
+    },
+    "student_compat": {
+     "points": 13.8,
+     "max": 25.0,
+     "reason": "temps de travail: unknown"
+    },
+    "ai_business": {
+     "points": 0.0,
+     "max": 20.0,
+     "reason": "0 termes IA, 0 termes business"
+    },
+    "non_technical": {
+     "points": 15.0,
+     "max": 15.0,
+     "reason": "0 signaux techniques"
+    },
+    "location": {
+     "points": 5.0,
+     "max": 10.0,
+     "reason": "unknown"
+    },
+    "cv_potential": {
+     "points": 2.5,
+     "max": 5.0,
+     "reason": "0 signaux entreprise (startup/fintech/conseil)"
+    },
+    "_llm_adjustment": {
+     "points": 0,
+     "max": 15,
+     "reason": "pas d'analyse LLM"
+    }
+   },
+   "discovered_at": "2026-09-19T21:13:32+00:00",
+   "is_paris": false
+  },
+  {
    "id": "fp_5009626305c87ce99fec",
    "title": "Principal, Global Operations Products & Service Delivery",
    "company": "Equinix, Inc",
@@ -298580,7 +299174,7 @@
   }
  ],
  "stats": {
-  "analysed": 3896,
+  "analysed": 3904,
   "retained": 29,
   "feedback_count": 0,
   "feedback_rate": 0.0,
@@ -298605,15 +299199,15 @@
    }
   ],
   "last_run": {
-   "id": 63,
-   "started_at": "2026-09-19T18:16:39+00:00",
-   "finished_at": "2026-09-19T18:19:56+00:00",
+   "id": 64,
+   "started_at": "2026-09-19T21:10:34+00:00",
+   "finished_at": "2026-09-19T21:15:10+00:00",
    "sources_ok": "[\"france_travail\", \"adzuna\", \"themuse\", \"remotive\", \"jobicy\", \"hn_whoishiring\", \"wttj\", \"linkedin\", \"email_inbox\"]",
    "sources_failed": "[]",
    "n_raw": 629,
-   "n_new": 53,
-   "n_scored": 3647,
-   "n_llm": 0,
+   "n_new": 8,
+   "n_scored": 3651,
+   "n_llm": 1,
    "n_priority1": 1,
    "n_priority2": 27,
    "notes": "archivées: 0"
