@@ -1,5 +1,8 @@
 # 🔎 Veille freelance / temps partiel — IA & Business
 
+> ⏹️ **Projet arrêté le 2026-09-26** : poste trouvé. Les workflows `scan` et `digest` sont désactivés
+> (Actions → workflow → *Enable workflow* pour reprendre). Le code, la base et le dashboard restent en l'état.
+
 Agent de sourcing autonome. Il scanne plusieurs sources plusieurs fois par jour,
 déduplique, filtre, score (règles + LLM), et t'envoie par email **uniquement** les
 opportunités réellement pertinentes pour un profil **étudiant business avec bonne
@@ -136,7 +139,7 @@ Le dashboard sera sur `https://<toi>.github.io/veille-freelance/`.
 
 ### f. Lancer
 
-Les workflows tournent en cron automatiquement. Pour un test immédiat :
+~~Les workflows tournent en cron automatiquement.~~ *(Désactivés depuis le 2026-09-26, cf. bandeau en tête.)* Pour un test immédiat :
 **Actions → scan → Run workflow**, puis **Actions → digest → Run workflow**.
 
 ## 6. Utilisation quotidienne

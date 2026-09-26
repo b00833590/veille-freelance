@@ -2,9 +2,11 @@
 
 **Repo :** https://github.com/b00833590/veille-freelance
 **Dashboard :** https://b00833590.github.io/veille-freelance/
-**Dernière mise à jour :** 2026-09-04
+**Dernière mise à jour :** 2026-09-26
 
-Le système tourne en autonomie sur GitHub Actions (4 scans/jour + digest à 8h).
+> ⏹️ **Arrêté le 2026-09-26** : poste trouvé. `scan` et `digest` désactivés dans GitHub Actions ; pour reprendre, les ré-activer (Actions → *Enable workflow*). Ce qui suit décrit l'état au 2026-09-04.
+
+Le système tournait en autonomie sur GitHub Actions (4 scans/jour + digest à 8h).
 Clé branchée : **Gemini**. En attente : France Travail, Adzuna, Gmail (SMTP + IMAP).
 
 ---
